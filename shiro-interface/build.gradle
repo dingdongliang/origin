@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        //使用的仓库优先级
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.9.RELEASE")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+archivesBaseName = 'shiro-interface'
+
+
+ext {
+}
+
+bootRepackage {
+    enabled = false
+}
+
+build {
+}
+
+dependencies {
+}
+
+configurations {
+    // 所有需要忽略的包定义在此
+    //all*.exclude group: 'commons-httpclient'
+    //all*.exclude group: 'commons-beanutils', module: 'commons-beanutils'
+}

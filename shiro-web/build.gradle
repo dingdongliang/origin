@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.9.RELEASE")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+archivesBaseName = 'shiro-web'
+
+ext {
+    springBootVar = '1.5.9.RELEASE'
+}
+
+bootRepackage {
+    enabled = false
+}
+
+dependencies {
+    //要依赖的模块
+    compile project(':shiro-service')
+
+    compile "org.springframework.boot:spring-boot-starter-web:$springBootVar"
+
+    testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVar"
+}
