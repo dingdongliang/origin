@@ -1,0 +1,36 @@
+archivesBaseName = 'shiro-configure'
+apply plugin: 'org.springframework.boot'
+ext {
+}
+
+bootRepackage {
+    enabled = false
+}
+
+build {
+}
+
+dependencies {
+    compile(
+            "org.apache.shiro:shiro-spring:${shiroVersion}",
+            "org.apache.shiro:shiro-web:${shiroVersion}",
+            "org.apache.shiro:shiro-quartz:${shiroVersion}",
+            "javax.servlet:javax.servlet-api:${servletVersion}",
+            "org.apache.shiro:shiro-ehcache:${shiroVersion}",
+            "org.springframework.boot:spring-boot:${springBootVersion}",
+            "org.springframework.boot:spring-boot-autoconfigure:${springBootVersion}",
+            "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+    )
+
+    compile("org.apache.shiro:shiro-core:${shiroVersion}") {
+        exclude group: 'commons-beanutils'
+    }
+
+    runtime "org.springframework.boot:spring-boot-configuration-processor:${springBootVersion}"
+}
+
+configurations {
+    // 所有需要忽略的包定义在此
+    //all*.exclude group: 'commons-httpclient'
+    //all*.exclude group: 'commons-beanutils', module: 'commons-beanutils'
+}

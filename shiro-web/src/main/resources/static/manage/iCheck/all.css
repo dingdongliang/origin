@@ -1,0 +1,61 @@
+/* iCheck plugin skins
+----------------------------------- */
+@import url("/manage/iCheck/minimal/_all.css");
+/*
+@import url("/manage/iCheck/minimal/minimal.css");
+@import url("/manage/iCheck/minimal/red.css");
+@import url("/manage/iCheck/minimal/green.css");
+@import url("/manage/iCheck/minimal/blue.css");
+@import url("/manage/iCheck/minimal/aero.css");
+@import url("/manage/iCheck/minimal/grey.css");
+@import url("/manage/iCheck/minimal/orange.css");
+@import url("/manage/iCheck/minimal/yellow.css");
+@import url("/manage/iCheck/minimal/pink.css");
+@import url("/manage/iCheck/minimal/purple.css");
+*/
+
+@import url("/manage/iCheck/square/_all.css");
+/*
+@import url("/manage/iCheck/square/square.css");
+@import url("/manage/iCheck/square/red.css");
+@import url("/manage/iCheck/square/green.css");
+@import url("/manage/iCheck/square/blue.css");
+@import url("/manage/iCheck/square/aero.css");
+@import url("/manage/iCheck/square/grey.css");
+@import url("/manage/iCheck/square/orange.css");
+@import url("/manage/iCheck/square/yellow.css");
+@import url("/manage/iCheck/square/pink.css");
+@import url("/manage/iCheck/square/purple.css");
+*/
+
+@import url("/manage/iCheck/flat/_all.css");
+/*
+@import url("/manage/iCheck/flat/flat.css");
+@import url("/manage/iCheck/flat/red.css");
+@import url("/manage/iCheck/flat/green.css");
+@import url("/manage/iCheck/flat/blue.css");
+@import url("/manage/iCheck/flat/aero.css");
+@import url("/manage/iCheck/flat/grey.css");
+@import url("/manage/iCheck/flat/orange.css");
+@import url("/manage/iCheck/flat/yellow.css");
+@import url("/manage/iCheck/flat/pink.css");
+@import url("/manage/iCheck/flat/purple.css");
+*/
+
+@import url("/manage/iCheck/line/_all.css");
+/*
+@import url("/manage/iCheck/line/line.css");
+@import url("/manage/iCheck/line/red.css");
+@import url("/manage/iCheck/line/green.css");
+@import url("/manage/iCheck/line/blue.css");
+@import url("/manage/iCheck/line/aero.css");
+@import url("/manage/iCheck/line/grey.css");
+@import url("/manage/iCheck/line/orange.css");
+@import url("/manage/iCheck/line/yellow.css");
+@import url("/manage/iCheck/line/pink.css");
+@import url("/manage/iCheck/line/purple.css");
+*/
+
+@import url("/manage/iCheck/polaris/polaris.css");
+
+@import url("/manage/iCheck/futurico/futurico.css");

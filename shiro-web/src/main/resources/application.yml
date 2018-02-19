@@ -1,0 +1,19 @@
+shiro:
+  realm-class: space.dyenigma.shiro.MyShiroRealm
+  custom-authc-filter-class: space.dyenigma.shiro.AjaxAuthorizationFilter
+  login-url: /login
+  success-url: /admin/sysFunctionManager/role_manager
+  retry-max: 5
+  retry-expire-time-redis: 5
+  authorization-expire-time-redis: 10
+  hash-iterations: 1024
+  hash-algorithm-name: MD5
+  stored-credentials-hex-encoded: false
+  session: 
+      global-session-timeout: 180000
+      validation-interval: 1000
+      validation-scheduler-enabled: true 
+  filter-chain-definitions: 
+    /media/**: anon
+    /admin/**: authc
+

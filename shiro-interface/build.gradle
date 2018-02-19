@@ -1,19 +1,5 @@
-buildscript {
-    repositories {
-        //使用的仓库优先级
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.9.RELEASE")
-    }
-}
-
-apply plugin: 'org.springframework.boot'
-
 archivesBaseName = 'shiro-interface'
-
-
+apply plugin: 'org.springframework.boot'
 ext {
 }
 
@@ -25,10 +11,33 @@ build {
 }
 
 dependencies {
+
+    compile project(':shiro-configure')
+
+    compile("org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}") {
+        exclude module: 'spring-orm'
+        exclude module: 'spring-context'
+        exclude module: 'spring-tx'
+        exclude module: 'spring-beans'
+    }
+
+    compile(
+            "org.projectlombok:lombok:${lombokVersion}",
+            "org.apache.commons:commons-lang3:${commonsLangsVersion}",
+            "com.google.guava:guava:${guavaVersion}",
+            "com.github.calimero:calimero-core:${calimeroVersion}",
+            "commons-io:commons-io:${commonsIOVersion}",
+            "commons-codec:commons-codec:${commonsCodecVersion}",
+            "com.github.pagehelper:pagehelper:${pageHelperVersion}",
+            "com.alibaba:fastjson:${fastJsonVersion}"
+    )
+
+    compile("commons-beanutils:commons-beanutils:${commonsBeanUtilsVersion}") {
+        exclude group: 'commons-logging'
+    }
+
+    runtime('mysql:mysql-connector-java')
 }
 
 configurations {
-    // 所有需要忽略的包定义在此
-    //all*.exclude group: 'commons-httpclient'
-    //all*.exclude group: 'commons-beanutils', module: 'commons-beanutils'
 }
