@@ -36,11 +36,14 @@ public class ShiroConfigurer {
     public ShiroFilterFactoryBean shirFilter(SecurityManager securityManager) {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
 
-        shiroFilterFactoryBean.setSecurityManager(securityManager); // 必须设置 SecurityManager
-
-        shiroFilterFactoryBean.setLoginUrl("/login");  // 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
-        shiroFilterFactoryBean.setSuccessUrl("/index"); // 登录成功后要跳转的链接
-        shiroFilterFactoryBean.setUnauthorizedUrl("/403");// 未授权界面
+        // 必须设置 SecurityManager
+        shiroFilterFactoryBean.setSecurityManager(securityManager);
+        // 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
+        shiroFilterFactoryBean.setLoginUrl("/login");
+        // 登录成功后要跳转的链接
+        shiroFilterFactoryBean.setSuccessUrl("/index");
+        // 未授权界面
+        shiroFilterFactoryBean.setUnauthorizedUrl("/404");
 
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
 
@@ -57,9 +60,12 @@ public class ShiroConfigurer {
         filterChainDefinitionMap.put("/login", "anon");
         filterChainDefinitionMap.put("/enter", "anon");
         filterChainDefinitionMap.put("/front/**", "anon");
+        //这个配置正式环境要去掉
         filterChainDefinitionMap.put("/index", "anon");
-        filterChainDefinitionMap.put("/logout", "logout");// 配置退出过滤器,其中的具体的退出代码Shiro已经替我们实现了
-        filterChainDefinitionMap.put("/**", "authc"); // 过滤链定义，从上向下顺序执行，一般将 /**放在最为下边
+        // 配置退出过滤器,其中的具体的退出代码Shiro已经替我们实现了
+        filterChainDefinitionMap.put("/logout", "logout");
+        // 过滤链定义，从上向下顺序执行，一般将 /**放在最为下边
+        filterChainDefinitionMap.put("/**", "authc");
 
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
         logger.debug("Shiro拦截器工厂类注入成功");
