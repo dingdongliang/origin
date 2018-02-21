@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.SysCompanyMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.SysCompany">
+
+        <id column="CO_ID" jdbcType="VARCHAR" property="coId"/>
+        <result column="CO_NAME" jdbcType="VARCHAR" property="coName"/>
+        <result column="PRNT_ID" jdbcType="VARCHAR" property="prntId"/>
+        <result column="PRNT_NAME" jdbcType="VARCHAR" property="prntName"/>
+        <result column="STATE" jdbcType="VARCHAR" property="state"/>
+        <result column="ICON_CLS" jdbcType="VARCHAR" property="iconCls"/>
+        <result column="CO_PHONE" jdbcType="VARCHAR" property="coPhone"/>
+        <result column="CO_FAX" jdbcType="VARCHAR" property="coFax"/>
+        <result column="CO_ADR" jdbcType="VARCHAR" property="coAdr"/>
+        <result column="CO_ZIP" jdbcType="VARCHAR" property="coZip"/>
+        <result column="SORT" jdbcType="INTEGER" property="sort"/>
+        <result column="CO_EMAIL" jdbcType="VARCHAR" property="coEmail"/>
+        <result column="CONTACT" jdbcType="VARCHAR" property="contact"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="MANAGER" jdbcType="VARCHAR" property="manager"/>
+        <result column="BANK" jdbcType="VARCHAR" property="bank"/>
+        <result column="BANK_ACCT" jdbcType="VARCHAR" property="bankAcct"/>
+        <result column="CO_DESC" jdbcType="VARCHAR" property="coDesc"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        CO_ID, CO_NAME, PRNT_ID, PRNT_NAME, STATE, ICON_CLS, CO_PHONE, CO_FAX, CO_ADR, CO_ZIP,
+        SORT, CO_EMAIL, CONTACT, STATUS, MANAGER, BANK, BANK_ACCT, CO_DESC, CREATER, MODIFYER,
+        CREATED, LASTMOD
+    </sql>
+
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_company WHERE STATUS = 'E'
+    </select>
+
+    <select id="findAllByPage" parameterType="space.dyenigma.util.PageUtil" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_company
+        WHERE STATUS = 'E' LIMIT #{begin},#{end}
+    </select>
+
+    <select id="getCount" resultType="long">
+        SELECT COUNT(*) FROM sys_company WHERE STATUS = 'E'
+    </select>
+
+    <select id="selectByPrntId" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        FROM sys_company WHERE STATUS = 'E' and PRNT_ID = #{prntId,jdbcType=VARCHAR}
+    </select>
+
+    <select id="findByPid" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_company
+        WHERE STATUS='E' AND PRNT_ID = #{prntId,jdbcType=VARCHAR} ORDER BY SORT
+    </select>
+</mapper>

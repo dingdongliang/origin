@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.GenAnswerMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.GenAnswer">
+        <id column="QSTN_ID" jdbcType="VARCHAR" property="qstnId"/>
+        <result column="ANSR_ID" jdbcType="VARCHAR" property="ansrId"/>
+        <result column="ANSR_DESC" jdbcType="VARCHAR" property="ansrDesc"/>
+        <result column="ANSR_AGREE" jdbcType="INTEGER" property="ansrAgree"/>
+        <result column="ANSR_OPOS" jdbcType="INTEGER" property="ansrOpos"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+    </resultMap>
+
+
+</mapper>

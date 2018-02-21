@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.SysPrjUserMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.SysPrjUser">
+        <id column="PU_ID" jdbcType="VARCHAR" property="puId"/>
+        <result column="PRJ_ID" jdbcType="VARCHAR" property="prjId"/>
+        <result column="USER_ID" jdbcType="VARCHAR" property="userId"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        PU_ID, PRJ_ID, USER_ID, STATUS, CREATED, LASTMOD, CREATER, MODIFYER
+    </sql>
+
+    <select id="getPrjUserByPrjId" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_prj_user where PRJ_ID = #{prjId,jdbcType=VARCHAR} and status='E'
+    </select>
+
+    <select id="findAllByUserId" resultMap="BaseResultMap" parameterType="java.lang.String">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_prj_user where USER_ID = #{userId,jdbcType=VARCHAR} and status='E'
+    </select>
+</mapper>

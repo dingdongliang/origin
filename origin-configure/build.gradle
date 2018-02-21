@@ -1,0 +1,54 @@
+archivesBaseName = 'origin-configure'
+apply plugin: 'org.springframework.boot'
+ext {
+}
+
+bootRepackage {
+    enabled = false
+}
+
+build {
+}
+
+dependencies {
+
+    compile(
+            "org.apache.shiro:shiro-spring:${shiroVersion}",
+            "org.apache.shiro:shiro-web:${shiroVersion}",
+            "org.apache.shiro:shiro-quartz:${shiroVersion}",
+            "javax.servlet:javax.servlet-api:${servletVersion}",
+            "org.apache.shiro:shiro-ehcache:${shiroVersion}",
+            "org.springframework.boot:spring-boot:${springBootVersion}",
+            "org.springframework.boot:spring-boot-autoconfigure:${springBootVersion}",
+            "org.springframework.boot:spring-boot-starter-web:${springBootVersion}",
+            "org.springframework.boot:spring-boot-starter-aop:${springBootVersion}",
+            "org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}",
+            "org.springframework.session:spring-session-data-redis:${springRedisVersion}",
+            "org.mybatis.spring.boot:mybatis-spring-boot-starter:${springMybatisVersion}",
+            "org.apache.commons:commons-lang3:${commonsLangsVersion}",
+            "tk.mybatis:mapper:${tkMapperVersion}",
+            "com.alibaba:druid:${druidVersion}",
+            "net.sourceforge.jexcelapi:jxl:2.6.12",
+            "org.apache.poi:poi:3.13",
+            "commons-io:commons-io:${commonsIOVersion}",
+            "commons-codec:commons-codec:${commonsCodecVersion}",
+            "com.github.penggle:kaptcha:${kaptchaVersion}",
+            "io.springfox:springfox-swagger2:${swaggerVersion}",
+            "io.springfox:springfox-swagger-ui:${swaggerVersion}",
+            "com.github.pagehelper:pagehelper:${pageHelperVersion}",
+            "com.alibaba:fastjson:${fastJsonVersion}",
+            "commons-fileupload:commons-fileupload:1.3.1"
+    )
+
+    compile("org.apache.shiro:shiro-core:${shiroVersion}") {
+        exclude group: 'commons-beanutils'
+    }
+
+    runtime "org.springframework.boot:spring-boot-configuration-processor:${springBootVersion}"
+}
+
+configurations {
+    // 所有需要忽略的包定义在此
+    //all*.exclude group: 'commons-httpclient'
+    //all*.exclude group: 'commons-beanutils', module: 'commons-beanutils'
+}

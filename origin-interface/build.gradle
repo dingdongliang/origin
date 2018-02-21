@@ -1,0 +1,30 @@
+archivesBaseName = 'origin-interface'
+apply plugin: 'org.springframework.boot'
+ext {
+}
+
+bootRepackage {
+    enabled = false
+}
+
+build {
+}
+
+dependencies {
+
+    compile project(':origin-configure')
+
+    compile(
+            "com.google.guava:guava:${guavaVersion}",
+            "com.github.calimero:calimero-core:${calimeroVersion}"
+    )
+
+    compile("commons-beanutils:commons-beanutils:${commonsBeanUtilsVersion}") {
+        exclude group: 'commons-logging'
+    }
+
+    runtime('mysql:mysql-connector-java')
+}
+
+configurations {
+}

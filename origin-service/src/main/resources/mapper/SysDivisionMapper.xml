@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.SysDivisionMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.SysDivision">
+        <id column="DIV_ID" jdbcType="VARCHAR" property="divId"/>
+        <result column="DIV_NAME" jdbcType="VARCHAR" property="divName"/>
+        <result column="MANAGER" jdbcType="VARCHAR" property="manager"/>
+        <result column="DIV_PHONE" jdbcType="VARCHAR" property="divPhone"/>
+        <result column="DIV_ADR" jdbcType="VARCHAR" property="divAdr"/>
+        <result column="CO_ID" jdbcType="VARCHAR" property="coId"/>
+        <result column="CO_NAME" jdbcType="VARCHAR" property="coName"/>
+        <result column="DIV_DESC" jdbcType="VARCHAR" property="divDesc"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="ICON_CLS" jdbcType="VARCHAR" property="iconCls"/>
+        <result column="STATE" jdbcType="VARCHAR" property="state"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        DIV_ID, DIV_NAME, MANAGER, DIV_PHONE, DIV_ADR, CO_ID, CO_NAME, DIV_DESC, STATUS,
+        ICON_CLS, STATE, CREATED, LASTMOD, CREATER, MODIFYER
+    </sql>
+
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_division
+        WHERE STATUS = 'E' AND (PRNT_ID IS NULL)
+    </select>
+
+    <select id="findByCompId" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_division
+        WHERE STATUS='E' AND CO_ID = #{coId,jdbcType=VARCHAR}
+    </select>
+
+    <update id="updateById" parameterType="java.lang.String">
+        UPDATE sys_division SET STATUS='I' WHERE DIV_ID = #{divId,jdbcType=VARCHAR}
+    </update>
+
+    <select id="findSuperOrgan" resultMap="BaseResultMap">
+        SELECT DIV_ID,DIV_NAME,ICON_CLS,PRNT_ID
+        FROM sys_division WHERE STATUS = 'E' AND CO_ID = #{coId,jdbcType=VARCHAR}
+    </select>
+</mapper>

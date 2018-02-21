@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.SysRolePmsnMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.SysRolePmsn">
+        <id column="RP_ID" jdbcType="VARCHAR" property="rpId"/>
+        <result column="ROLE_ID" jdbcType="VARCHAR" property="roleId"/>
+        <result column="PMSN_ID" jdbcType="VARCHAR" property="pmsnId"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        RP_ID, ROLE_ID, PMSN_ID, STATUS, CREATED, LASTMOD, CREATER, MODIFYER
+    </sql>
+
+    <select id="findAllByRoleId" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_role_pmsn
+        WHERE STATUS = 'E' AND ROLE_ID = #{roleId,jdbcType=VARCHAR}
+    </select>
+
+    <select id="findAllRoleId" resultType="java.lang.String">
+        SELECT ROLE_ID FROM sys_role_pmsn WHERE STATUS = 'E' GROUP BY ROLE_ID
+    </select>
+
+    <select id="findAllByPmsnId" parameterType="java.lang.String" resultType="java.lang.String">
+        SELECT PMSN_ID FROM sys_role_pmsn
+        WHERE STATUS = 'E' AND PMSN_ID = #{pmsnId,jdbcType=VARCHAR}
+        GROUP BY ROLE_ID
+    </select>
+
+    <delete id="delByPmsnId" parameterType="String">
+        delete from sys_role_pmsn where PMSN_ID = #{pmsnId,jdbcType=VARCHAR}
+    </delete>
+</mapper>

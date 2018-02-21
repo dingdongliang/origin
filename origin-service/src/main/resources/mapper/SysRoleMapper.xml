@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.SysRoleMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.SysRole">
+        <id column="ROLE_ID" jdbcType="VARCHAR" property="roleId"/>
+        <result column="ROLE_NAME" jdbcType="VARCHAR" property="roleName"/>
+        <result column="ROLE_DESC" jdbcType="VARCHAR" property="roleDesc"/>
+        <result column="SORT" jdbcType="INTEGER" property="sort"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+        <result column="IS_DEFAULT" jdbcType="CHAR" property="isDefault"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        ROLE_ID, ROLE_NAME, ROLE_DESC, SORT, STATUS, CREATED, LASTMOD, CREATER, MODIFYER,IS_DEFAULT
+    </sql>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_role WHERE STATUS = 'E' ORDER BY SORT
+    </select>
+
+    <select id="findAllByPage" parameterType="space.dyenigma.util.PageUtil" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_role WHERE STATUS = 'E' ORDER BY SORT LIMIT #{begin},#{end}
+    </select>
+
+    <select id="getCount" resultType="long">
+        SELECT COUNT(*) FROM sys_role WHERE STATUS = 'E'
+    </select>
+
+    <select id="findDefaultRole" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_role where IS_DEFAULT='Y' and status='E'
+    </select>
+</mapper>

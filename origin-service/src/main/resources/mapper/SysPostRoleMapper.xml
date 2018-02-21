@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.SysPostRoleMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.SysPostRole">
+        <id column="PR_ID" jdbcType="VARCHAR" property="prId"/>
+        <result column="ROLE_ID" jdbcType="VARCHAR" property="roleId"/>
+        <result column="POST_ID" jdbcType="VARCHAR" property="postId"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        PR_ID, ROLE_ID, POST_ID, STATUS, CREATED, LASTMOD, CREATER, MODIFYER
+    </sql>
+
+
+    <select id="findAllByPostId" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_post_role
+        WHERE STATUS = 'E' AND POST_ID = #{postId,jdbcType=VARCHAR}
+    </select>
+
+    <select id="findAllByRoleId" parameterType="String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_post_role where status='E' and ROLE_ID =
+        #{roleId,jdbcType=VARCHAR}
+    </select>
+</mapper>

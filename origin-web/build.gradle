@@ -1,0 +1,26 @@
+archivesBaseName = 'origin-web'
+apply plugin: 'org.springframework.boot'
+
+ext {
+}
+
+bootRepackage {
+    enabled = false
+}
+
+dependencies {
+    //要依赖的模块
+    compile project(':origin-service')
+
+    compile(
+            "org.springframework.boot:spring-boot-starter-web:${springBootVersion}",
+            "org.springframework.boot:spring-boot-starter-data-redis:${springBootVersion}",
+            "org.springframework.boot:spring-boot-starter-tomcat:${springBootVersion}"
+
+    )
+
+    compile("org.springframework.boot:spring-boot-starter-freemarker:${springBootVersion}") {
+        exclude module: 'spring-boot-starter-tomcat'
+    }
+
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.GenQuestionMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.GenQuestion">
+        <id column="QSTN_ID" jdbcType="VARCHAR" property="qstnId"/>
+        <result column="QSTN_TITLE" jdbcType="VARCHAR" property="qstnTitle"/>
+        <result column="QSTN_KEY" jdbcType="VARCHAR" property="qstnKey"/>
+        <result column="QSTN_DESC" jdbcType="VARCHAR" property="qstnDesc"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        QSTN_ID, QSTN_TITLE, QSTN_KEY, QSTN_DESC, STATUS, CREATED, LASTMOD, CREATER, MODIFYER
+    </sql>
+
+    <select id="findAllByPage" parameterType="space.dyenigma.util.PageUtil" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM gen_question LIMIT #{begin},#{end}
+    </select>
+    <select id="findAllByUser" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM gen_question
+        WHERE STATUS='E' AND CREATER = #{creater,jdbcType=VARCHAR} ORDER BY CREATED
+    </select>
+    <select id="findAllByTime" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM gen_question
+        WHERE STATUS='E' AND
+        CREATED &gt;= #{start,jdbcType=VARCHAR} AND CREATED &lt;= #{end,jdbcType=VARCHAR}
+        ORDER BY CREATED
+    </select>
+    <select id="findAllByKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM gen_question
+        WHERE STATUS='E' AND QSTN_KEY like CONCAT(CONCAT('%', #{qstnKey,jdbcType=VARCHAR}), '%') ORDER BY
+        CREATED
+    </select>
+    <select id="findAllByWord" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM gen_question
+        WHERE STATUS='E' AND (
+        QSTN_KEY like CONCAT(CONCAT('%', #{word,jdbcType=VARCHAR}), '%')
+        OR
+        QSTN_TITLE like CONCAT(CONCAT('%', #{word,jdbcType=VARCHAR}), '%')
+        OR
+        QSTN_DESC like CONCAT(CONCAT('%', #{word,jdbcType=VARCHAR}), '%')
+        ) ORDER BY CREATED
+    </select>
+    <!--TODO long or int-->
+    <select id="getCount" resultType="long">
+        SELECT COUNT(*) FROM gen_question
+    </select>
+</mapper>

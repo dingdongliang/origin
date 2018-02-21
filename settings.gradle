@@ -17,7 +17,7 @@ include 'services:webservice'
 */
 
 rootProject.name = 'origin'
-include 'shiro-interface'
-include 'shiro-service'
-include 'shiro-web'
-include 'shiro-configure'
+include 'origin-interface'
+include 'origin-service'
+include 'origin-web'
+include 'origin-configure'

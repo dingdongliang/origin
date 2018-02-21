@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.SysUserMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.SysUser">
+        <id column="USER_ID" jdbcType="VARCHAR" property="userId"/>
+        <result column="USER_NAME" jdbcType="VARCHAR" property="userName"/>
+        <result column="ACCOUNT" jdbcType="VARCHAR" property="account"/>
+        <result column="PASSWORD" jdbcType="VARCHAR" property="password"/>
+        <result column="USER_EMAIL" jdbcType="VARCHAR" property="userEmail"/>
+        <result column="USER_PHONE" jdbcType="VARCHAR" property="userPhone"/>
+        <result column="FIRST_LOGIN" jdbcType="TIMESTAMP" property="firstLogin"/>
+        <result column="PREV_LOGIN" jdbcType="TIMESTAMP" property="prevLogin"/>
+        <result column="PREV_IP" jdbcType="VARCHAR" property="prevIp"/>
+        <result column="LAST_LOGIN" jdbcType="TIMESTAMP" property="lastLogin"/>
+        <result column="LOGIN_COUNT" jdbcType="VARCHAR" property="loginCount"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="USER_DESC" jdbcType="VARCHAR" property="userDesc"/>
+        <result column="IS_ONLINE" jdbcType="INTEGER" property="isOnline"/>
+        <result column="SORT" jdbcType="INTEGER" property="sort"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        USER_ID, USER_NAME, ACCOUNT, PASSWORD, USER_EMAIL, USER_PHONE, FIRST_LOGIN, PREV_LOGIN,
+        PREV_IP, LAST_LOGIN, LOGIN_COUNT, STATUS, USER_DESC, IS_ONLINE, SORT, CREATED, LASTMOD,
+        CREATER, MODIFYER
+    </sql>
+
+
+    <select id="findByName" parameterType="String" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_user
+        WHERE ACCOUNT = #{account,jdbcType=VARCHAR}
+    </select>
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_user WHERE STATUS = 'E'
+    </select>
+    <select id="findAllByPage" parameterType="space.dyenigma.util.PageUtil" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM sys_user
+        WHERE STATUS = 'E' ORDER BY sort LIMIT #{begin},#{end}
+    </select>
+    <select id="getCount" resultType="long">
+        SELECT COUNT(*) FROM sys_user WHERE STATUS = 'E'
+    </select>
+    <select id="findUserByPage" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_user
+        <where>
+            USER_ID in
+            <foreach collection="idSet" item="item" index="index"
+                     open="(" separator="," close=")">#{item}
+            </foreach>
+        </where>
+        LIMIT #{pageUtil.begin},#{pageUtil.end}
+    </select>
+
+    <select id="findUserByList" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_user
+        <where>
+            USER_ID in
+            <foreach collection="idSet" item="item" index="index"
+                     open="(" separator="," close=")">#{item}
+            </foreach>
+            and status='E'
+        </where>
+    </select>
+</mapper>

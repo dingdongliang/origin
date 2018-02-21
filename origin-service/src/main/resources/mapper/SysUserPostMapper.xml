@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="space.dyenigma.dao.SysUserPostMapper">
+    <resultMap id="BaseResultMap" type="space.dyenigma.entity.SysUserPost">
+        <id column="UP_ID" jdbcType="VARCHAR" property="upId"/>
+        <result column="USER_ID" jdbcType="VARCHAR" property="userId"/>
+        <result column="POST_ID" jdbcType="VARCHAR" property="postId"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="CREATED" jdbcType="TIMESTAMP" property="created"/>
+        <result column="LASTMOD" jdbcType="TIMESTAMP" property="lastmod"/>
+        <result column="CREATER" jdbcType="VARCHAR" property="creater"/>
+        <result column="MODIFYER" jdbcType="VARCHAR" property="modifyer"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        UP_ID, USER_ID, POST_ID, STATUS, CREATED, LASTMOD, CREATER, MODIFYER
+    </sql>
+
+
+    <select id="findByPostId" parameterType="String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_user_post where status='E' and POST_ID = #{postId,jdbcType=VARCHAR}
+    </select>
+
+    <select id="findAllByUserId" parameterType="String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from sys_user_post where status='E' and USER_ID = #{userId,jdbcType=VARCHAR}
+    </select>
+</mapper>
