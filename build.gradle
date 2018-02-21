@@ -35,6 +35,7 @@ subprojects {
 
     apply plugin: 'java'
     apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
 
 
     version = '1.0'
@@ -68,6 +69,7 @@ subprojects {
         swaggerVersion = '2.7.0'
         springRedisVersion = '1.3.1.RELEASE'
         springMybatisVersion = '1.3.0'
+        generatorVersion = '1.3.5'
     }
 
     repositories {
@@ -105,7 +107,7 @@ subprojects {
         //compile jarTree
 
         // 测试依赖
-        testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
+        testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
     }
 
     // 显示当前项目下所有用于 compile 的 jar.

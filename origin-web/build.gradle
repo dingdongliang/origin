@@ -1,5 +1,4 @@
 archivesBaseName = 'origin-web'
-apply plugin: 'org.springframework.boot'
 
 ext {
 }
@@ -23,4 +22,7 @@ dependencies {
         exclude module: 'spring-boot-starter-tomcat'
     }
 
+    testCompile(
+            "org.mybatis.generator:mybatis-generator-core:${generatorVersion}"
+    )
 }
