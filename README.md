@@ -2,7 +2,13 @@
 **起源**
 - IDEA使用Gradle构建多项目工程的步骤说明
     - IDEA不能直接新建多项目使用Gradle
-    - TODO：步骤说明
+    - 新建项目根目录
+        - mkdir origin
+        - 或者windows下右键新建文件夹
+    - 新建的origin目录下执行：gradle init
+    - 创建多个模块，有几个模块写几行
+        - Linux
+        - Windows
 - 设置mysql库
     - TODO：sql文件路径
 - 设置redis
