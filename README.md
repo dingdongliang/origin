@@ -1,7 +1,8 @@
 #origin
+
 **起源**
 
-##一些项目介绍 
+###一些项目介绍 
 - IDEA使用Gradle构建多项目工程的步骤说明
     - IDEA不能直接新建多项目使用Gradle
     - 新建项目根目录
@@ -41,7 +42,7 @@
 - 模板文件：origin-web模块下的resources.Templates
 - TODO:项目的依赖改成注册中心调用，SpringCloud相关改造
 
-##代码自动生成
+###代码自动生成
 - 对test包内的代码生成器CodeGenerator进行配置，根据表名来生成代码
 
     	修改CodeGenerator.java中的如下常量：
@@ -65,11 +66,11 @@
      	}
      	其依赖的包为："org.apache.commons:commons-lang3:3.4"
 
-##SpringBoot某些说明
+###SpringBoot某些说明
 - @RestController注解，代替原Spring项目中的@Controller注解+@ResponseBody注解
 
 
-##其他组件整合
+###其他组件整合
 - Mybatis整合相关类
 
     	src/main/java/space/dyenigma/configure/mybatis/MybatisConfigurer.java
@@ -127,7 +128,7 @@
         	实现Filter处理拦截资源文件的问题
         	继承AuthorizingRealm实现自定义Realm
 
-##一些细节，后续修改
+###一些细节，后续修改
 - 过滤器排除规则（已实现）
 - 页面跳转规则需要修改（重定向已实现，提交方式已更新）
 - 权限操作页面需要调整
