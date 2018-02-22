@@ -1,4 +1,5 @@
 archivesBaseName = 'origin-web'
+apply plugin: 'org.springframework.boot'
 
 ext {
 }

@@ -48,20 +48,22 @@ public class ShiroConfigurer {
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
 
         // 配置不会被拦截的链接 顺序判断,authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问
-        filterChainDefinitionMap.put("/manage/ckeditor/**", "anon");
-        filterChainDefinitionMap.put("/manage/css/**", "anon");
-        filterChainDefinitionMap.put("/manage/fonts/**", "anon");
-        filterChainDefinitionMap.put("/manage/iCheck/**", "anon");
-        filterChainDefinitionMap.put("/manage/images/**", "anon");
-        filterChainDefinitionMap.put("/manage/js/**", "anon");
+        filterChainDefinitionMap.put("/*/ckeditor/**", "anon");
+        filterChainDefinitionMap.put("/*/css/**", "anon");
+        filterChainDefinitionMap.put("/*/fonts/**", "anon");
+        filterChainDefinitionMap.put("/*/iCheck/**", "anon");
+        filterChainDefinitionMap.put("/*/images/**", "anon");
+        filterChainDefinitionMap.put("/*/js/**", "anon");
 
         filterChainDefinitionMap.put("/captcha", "anon");
         filterChainDefinitionMap.put("/favicon.ico", "anon");
         filterChainDefinitionMap.put("/login", "anon");
-        filterChainDefinitionMap.put("/enter", "anon");
+        filterChainDefinitionMap.put("/register", "anon");
         filterChainDefinitionMap.put("/front/**", "anon");
+
         //这个配置正式环境要去掉
         filterChainDefinitionMap.put("/index", "anon");
+
         // 配置退出过滤器,其中的具体的退出代码Shiro已经替我们实现了
         filterChainDefinitionMap.put("/logout", "logout");
         // 过滤链定义，从上向下顺序执行，一般将 /**放在最为下边

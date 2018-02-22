@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Mailbox</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- iCheck -->
-    <link rel="stylesheet" href="/manage/iCheck/flat/blue.css">
+    <link rel="stylesheet" href="${request.contextPath}/manage/iCheck/flat/blue.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -16,14 +16,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Mailbox
@@ -35,11 +35,11 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="compose.html" class="btn btn-primary btn-block margin-bottom">Compose</a>
+                    <a href="/mailbox/compose" class="btn btn-primary btn-block margin-bottom">Compose</a>
 
                     <div class="box box-solid">
                         <div class="box-header with-border">
@@ -63,7 +63,7 @@
                                 <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
                             </ul>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
                     <!-- /. box -->
                     <div class="box box-solid">
@@ -83,11 +83,11 @@
                                 <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
                             </ul>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-9">
                     <div class="box box-primary">
                         <div class="box-header with-border">
@@ -101,7 +101,7 @@
                             </div>
                             <!-- /.box-tools -->
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body no-padding">
                             <div class="mailbox-controls">
                                 <!-- Check all button -->
@@ -138,7 +138,7 @@
                                         <td><input type="checkbox"/></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
                                         </td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -149,7 +149,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i
                                                 class="fa fa-star-o text-yellow"></i></a></td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -160,7 +160,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i
                                                 class="fa fa-star-o text-yellow"></i></a></td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -171,7 +171,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
                                         </td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -182,7 +182,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
                                         </td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -193,7 +193,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i
                                                 class="fa fa-star-o text-yellow"></i></a></td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -204,7 +204,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i
                                                 class="fa fa-star-o text-yellow"></i></a></td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -215,7 +215,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
                                         </td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -226,7 +226,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
                                         </td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -237,7 +237,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i
                                                 class="fa fa-star-o text-yellow"></i></a></td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -248,7 +248,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i
                                                 class="fa fa-star-o text-yellow"></i></a></td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -259,7 +259,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
                                         </td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -270,7 +270,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i
                                                 class="fa fa-star-o text-yellow"></i></a></td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -281,7 +281,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
                                         </td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -292,7 +292,7 @@
                                         <td><input type="checkbox"></td>
                                         <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a>
                                         </td>
-                                        <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
+                                        <td class="mailbox-name"><a href="/mailbox/readMail">Alexander Pierce</a></td>
                                         <td class="mailbox-subject"><b>AdminLTE 2.0 Issue</b> - Trying to find a
                                             solution to this problem...
                                         </td>
@@ -305,7 +305,7 @@
                             </div>
                             <!-- /.mail-box-messages -->
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer no-padding">
                             <div class="mailbox-controls">
                                 <!-- Check all button -->
@@ -339,33 +339,32 @@
                     </div>
                     <!-- /. box -->
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- SlimScroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
 <!-- iCheck 1.0.1 -->
-<script src="/manage/iCheck/icheck.min.js"></script>
+<script src="${request.contextPath}/manage/iCheck/icheck.min.js"></script>
 <!-- Page Script -->
 <script>
     $(function () {

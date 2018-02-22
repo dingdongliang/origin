@@ -142,3 +142,4 @@
 - 注意service实现类中的通用mapper陷阱，最好明确指定特定mapper
 - 后台模板更新，已经修改为AdminLTE模板，TODO 相关展示待完善
 - 权限存储方式：role_pmsn表，放弃一一对应格式，合并为一个长字符串
+- 编译时忽略test：gradle build -x test

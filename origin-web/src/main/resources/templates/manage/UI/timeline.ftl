@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Timeline</title>
-  <!-- Tell the browser to be responsive to screen width -->
+
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
      <#include "${request.contextPath}/manage/common/css.ftl"/></head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -13,14 +13,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-  <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-  <!-- Content Wrapper. Contains page content -->
+
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+
     <section class="content-header">
       <h1>
         Timeline
@@ -33,7 +33,7 @@
       </ol>
     </section>
 
-    <!-- Main content -->
+
     <section class="content">
 
       <!-- row -->
@@ -152,9 +152,9 @@
             </li>
           </ul>
         </div>
-        <!-- /.col -->
+
       </div>
-      <!-- /.row -->
+
 
       <div class="row" style="margin-top: 10px;">
         <div class="col-md-12">
@@ -200,33 +200,32 @@
 &lt;/ul>
                   </pre>
             </div>
-            <!-- /.box-body -->
+
           </div>
-          <!-- /.box -->
+
         </div>
-        <!-- /.col -->
+
       </div>
-      <!-- /.row -->
+
 
     </section>
-    <!-- /.content -->
+
   </div>
-  <!-- /.content-wrapper -->
+
 
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-  <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+
+
   <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 </body>

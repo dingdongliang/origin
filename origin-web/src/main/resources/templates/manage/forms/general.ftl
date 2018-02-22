@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | General Form Elements</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <#include "${request.contextPath}/manage/common/css.ftl"/>
 </head>
@@ -14,14 +14,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 General Form Elements
@@ -34,7 +34,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
             <div class="row">
                 <!-- left column -->
@@ -44,7 +44,7 @@
                         <div class="box-header with-border">
                             <h3 class="box-title">Quick Example</h3>
                         </div>
-                        <!-- /.box-header -->
+
                         <!-- form start -->
                         <form role="form">
                             <div class="box-body">
@@ -70,14 +70,14 @@
                                     </label>
                                 </div>
                             </div>
-                            <!-- /.box-body -->
+
 
                             <div class="box-footer">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>
-                    <!-- /.box -->
+
 
                     <!-- Form Element sizes -->
                     <div class="box box-success">
@@ -91,9 +91,9 @@
                             <br>
                             <input class="form-control input-sm" type="text" placeholder=".input-sm">
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                     <div class="box box-danger">
                         <div class="box-header with-border">
@@ -112,9 +112,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                     <!-- Input addon -->
                     <div class="box box-info">
@@ -170,7 +170,7 @@
                         </span>
                                         <input type="text" class="form-control">
                                     </div>
-                                    <!-- /input-group -->
+
                                 </div>
                                 <!-- /.col-lg-6 -->
                                 <div class="col-lg-6">
@@ -180,11 +180,11 @@
                         </span>
                                         <input type="text" class="form-control">
                                     </div>
-                                    <!-- /input-group -->
+
                                 </div>
                                 <!-- /.col-lg-6 -->
                             </div>
-                            <!-- /.row -->
+
 
                             <h4>With buttons</h4>
 
@@ -203,20 +203,20 @@
                                         <li><a href="#">Separated link</a></li>
                                     </ul>
                                 </div>
-                                <!-- /btn-group -->
+
                                 <input type="text" class="form-control">
                             </div>
-                            <!-- /input-group -->
+
                             <p class="margin">Normal</p>
 
                             <div class="input-group">
                                 <div class="input-group-btn">
                                     <button type="button" class="btn btn-danger">Action</button>
                                 </div>
-                                <!-- /btn-group -->
+
                                 <input type="text" class="form-control">
                             </div>
-                            <!-- /input-group -->
+
                             <p class="margin">Small <code>.input-group.input-group-sm</code></p>
 
                             <div class="input-group input-group-sm">
@@ -225,11 +225,11 @@
                       <button type="button" class="btn btn-info btn-flat">Go!</button>
                     </span>
                             </div>
-                            <!-- /input-group -->
+
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                 </div>
                 <!--/.col (left) -->
@@ -240,7 +240,7 @@
                         <div class="box-header with-border">
                             <h3 class="box-title">Horizontal Form</h3>
                         </div>
-                        <!-- /.box-header -->
+
                         <!-- form start -->
                         <form class="form-horizontal">
                             <div class="box-body">
@@ -269,7 +269,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.box-body -->
+
                             <div class="box-footer">
                                 <button type="submit" class="btn btn-default">Cancel</button>
                                 <button type="submit" class="btn btn-info pull-right">Sign in</button>
@@ -277,13 +277,13 @@
                             <!-- /.box-footer -->
                         </form>
                     </div>
-                    <!-- /.box -->
+
                     <!-- general form elements disabled -->
                     <div class="box box-warning">
                         <div class="box-header with-border">
                             <h3 class="box-title">General Elements</h3>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <form role="form">
                                 <!-- text input -->
@@ -423,31 +423,30 @@
 
                             </form>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
                 <!--/.col (right) -->
             </div>
-            <!-- /.row -->
+
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 </body>

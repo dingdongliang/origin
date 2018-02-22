@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Pace Page</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- Pace style -->
-    <link rel="stylesheet" href="/manage/css/pace.min.css">
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/pace.min.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -27,9 +27,9 @@
 
     <!-- =============================================== -->
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Pace page
@@ -42,7 +42,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
 
             <!-- Default box -->
@@ -74,39 +74,38 @@
                     <div class="ajax-content">
                     </div>
                 </div>
-                <!-- /.box-body -->
+
                 <div class="box-footer">
                     Footer
                 </div>
-                <!-- /.box-footer-->
+
             </div>
-            <!-- /.box -->
+
 
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
 
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- PACE -->
-<script src="/manage/js/pace.min.js"></script>
+<script src="${request.contextPath}/manage/js/pace.min.js"></script>
 <!-- Slimscroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
 <!-- page script -->
 <script type="text/javascript">
     // To make Pace works on Ajax calls

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Widgets</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <#include "${request.contextPath}/manage/common/css.ftl"/>
 </head>
@@ -14,14 +14,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Widgets
@@ -33,7 +33,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
 
             <div class="row">
@@ -49,7 +49,7 @@
                     </div>
                     <!-- /.info-box -->
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box">
                         <span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
@@ -62,7 +62,7 @@
                     </div>
                     <!-- /.info-box -->
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box">
                         <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
@@ -75,7 +75,7 @@
                     </div>
                     <!-- /.info-box -->
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box">
                         <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
@@ -88,9 +88,9 @@
                     </div>
                     <!-- /.info-box -->
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
             <!-- =========================================================== -->
 
@@ -114,7 +114,7 @@
                     </div>
                     <!-- /.info-box -->
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-green">
                         <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
@@ -134,7 +134,7 @@
                     </div>
                     <!-- /.info-box -->
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-yellow">
                         <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
@@ -154,7 +154,7 @@
                     </div>
                     <!-- /.info-box -->
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="info-box bg-red">
                         <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
@@ -174,9 +174,9 @@
                     </div>
                     <!-- /.info-box -->
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
             <!-- =========================================================== -->
 
@@ -198,7 +198,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- ./col -->
+
                 <div class="col-lg-3 col-xs-6">
                     <!-- small box -->
                     <div class="small-box bg-green">
@@ -215,7 +215,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- ./col -->
+
                 <div class="col-lg-3 col-xs-6">
                     <!-- small box -->
                     <div class="small-box bg-yellow">
@@ -232,7 +232,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- ./col -->
+
                 <div class="col-lg-3 col-xs-6">
                     <!-- small box -->
                     <div class="small-box bg-red">
@@ -249,9 +249,9 @@
                         </a>
                     </div>
                 </div>
-                <!-- ./col -->
+
             </div>
-            <!-- /.row -->
+
 
             <!-- =========================================================== -->
 
@@ -268,15 +268,15 @@
                             </div>
                             <!-- /.box-tools -->
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             The body of the box
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3">
                     <div class="box box-success">
                         <div class="box-header with-border">
@@ -288,15 +288,15 @@
                             </div>
                             <!-- /.box-tools -->
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             The body of the box
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3">
                     <div class="box box-warning">
                         <div class="box-header with-border">
@@ -309,15 +309,15 @@
                             </div>
                             <!-- /.box-tools -->
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             The body of the box
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3">
                     <div class="box box-danger">
                         <div class="box-header">
@@ -326,18 +326,18 @@
                         <div class="box-body">
                             The body of the box
                         </div>
-                        <!-- /.box-body -->
+
                         <!-- Loading (remove the following to stop the loading)-->
                         <div class="overlay">
                             <i class="fa fa-refresh fa-spin"></i>
                         </div>
                         <!-- end loading -->
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
             <!-- =========================================================== -->
 
@@ -354,15 +354,15 @@
                             </div>
                             <!-- /.box-tools -->
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             The body of the box
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3">
                     <div class="box box-success box-solid">
                         <div class="box-header with-border">
@@ -374,15 +374,15 @@
                             </div>
                             <!-- /.box-tools -->
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             The body of the box
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3">
                     <div class="box box-warning box-solid">
                         <div class="box-header with-border">
@@ -395,15 +395,15 @@
                             </div>
                             <!-- /.box-tools -->
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             The body of the box
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-3">
                     <div class="box box-danger box-solid">
                         <div class="box-header">
@@ -412,18 +412,18 @@
                         <div class="box-body">
                             The body of the box
                         </div>
-                        <!-- /.box-body -->
+
                         <!-- Loading (remove the following to stop the loading)-->
                         <div class="overlay">
                             <i class="fa fa-refresh fa-spin"></i>
                         </div>
                         <!-- end loading -->
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
             <!-- =========================================================== -->
 
@@ -447,7 +447,7 @@
                                         class="fa fa-times"></i></button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <!-- Conversations are loaded here -->
                             <div class="direct-chat-messages">
@@ -458,7 +458,7 @@
                                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg"
+                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         Is this template really for free? That's unbelievable!
@@ -474,7 +474,7 @@
                                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg"
+                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user3-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         You better believe it!
@@ -490,7 +490,7 @@
                                 <ul class="contacts-list">
                                     <li>
                                         <a href="#">
-                                            <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg"
+                                            <img class="contacts-list-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
                                                  alt="User Image">
 
                                             <div class="contacts-list-info">
@@ -509,7 +509,7 @@
                             </div>
                             <!-- /.direct-chat-pane -->
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer">
                             <form action="#" method="post">
                                 <div class="input-group">
@@ -521,11 +521,11 @@
                                 </div>
                             </form>
                         </div>
-                        <!-- /.box-footer-->
+
                     </div>
-                    <!--/.direct-chat -->
+
                 </div>
-                <!-- /.col -->
+
 
                 <div class="col-md-3">
                     <!-- DIRECT CHAT SUCCESS -->
@@ -545,7 +545,7 @@
                                         class="fa fa-times"></i></button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <!-- Conversations are loaded here -->
                             <div class="direct-chat-messages">
@@ -556,7 +556,7 @@
                                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg"
+                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         Is this template really for free? That's unbelievable!
@@ -572,7 +572,7 @@
                                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg"
+                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user3-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         You better believe it!
@@ -588,7 +588,7 @@
                                 <ul class="contacts-list">
                                     <li>
                                         <a href="#">
-                                            <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg"
+                                            <img class="contacts-list-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
                                                  alt="User Image">
 
                                             <div class="contacts-list-info">
@@ -607,7 +607,7 @@
                             </div>
                             <!-- /.direct-chat-pane -->
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer">
                             <form action="#" method="post">
                                 <div class="input-group">
@@ -619,11 +619,11 @@
                                 </div>
                             </form>
                         </div>
-                        <!-- /.box-footer-->
+
                     </div>
-                    <!--/.direct-chat -->
+
                 </div>
-                <!-- /.col -->
+
 
                 <div class="col-md-3">
                     <!-- DIRECT CHAT WARNING -->
@@ -643,7 +643,7 @@
                                         class="fa fa-times"></i></button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <!-- Conversations are loaded here -->
                             <div class="direct-chat-messages">
@@ -654,7 +654,7 @@
                                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg"
+                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         Is this template really for free? That's unbelievable!
@@ -670,7 +670,7 @@
                                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg"
+                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user3-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         You better believe it!
@@ -686,7 +686,7 @@
                                 <ul class="contacts-list">
                                     <li>
                                         <a href="#">
-                                            <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg"
+                                            <img class="contacts-list-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
                                                  alt="User Image">
 
                                             <div class="contacts-list-info">
@@ -705,7 +705,7 @@
                             </div>
                             <!-- /.direct-chat-pane -->
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer">
                             <form action="#" method="post">
                                 <div class="input-group">
@@ -717,11 +717,11 @@
                                 </div>
                             </form>
                         </div>
-                        <!-- /.box-footer-->
+
                     </div>
-                    <!--/.direct-chat -->
+
                 </div>
-                <!-- /.col -->
+
 
                 <div class="col-md-3">
                     <!-- DIRECT CHAT DANGER -->
@@ -741,7 +741,7 @@
                                         class="fa fa-times"></i></button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <!-- Conversations are loaded here -->
                             <div class="direct-chat-messages">
@@ -752,7 +752,7 @@
                                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg"
+                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         Is this template really for free? That's unbelievable!
@@ -768,7 +768,7 @@
                                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="../dist/img/user3-128x128.jpg"
+                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user3-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         You better believe it!
@@ -784,7 +784,7 @@
                                 <ul class="contacts-list">
                                     <li>
                                         <a href="#">
-                                            <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg"
+                                            <img class="contacts-list-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
                                                  alt="User Image">
 
                                             <div class="contacts-list-info">
@@ -803,7 +803,7 @@
                             </div>
                             <!-- /.direct-chat-pane -->
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer">
                             <form action="#" method="post">
                                 <div class="input-group">
@@ -815,26 +815,23 @@
                                 </div>
                             </form>
                         </div>
-                        <!-- /.box-footer-->
+
                     </div>
-                    <!--/.direct-chat -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
             <h2 class="page-header">Social Widgets</h2>
 
             <div class="row">
                 <div class="col-md-4">
-                    <!-- Widget: user widget style 1 -->
                     <div class="box box-widget widget-user-2">
-                        <!-- Add the bg color to the header using any of the bg-* classes -->
                         <div class="widget-user-header bg-yellow">
                             <div class="widget-user-image">
-                                <img class="img-circle" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                                <img class="img-circle" src="${request.contextPath}/manage/images/user7-128x128.jpg" alt="User Avatar">
                             </div>
-                            <!-- /.widget-user-image -->
                             <h3 class="widget-user-username">Nadia Carmichael</h3>
                             <h5 class="widget-user-desc">Lead Developer</h5>
                         </div>
@@ -848,19 +845,15 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- /.widget-user -->
                 </div>
-                <!-- /.col -->
                 <div class="col-md-4">
-                    <!-- Widget: user widget style 1 -->
                     <div class="box box-widget widget-user">
-                        <!-- Add the bg color to the header using any of the bg-* classes -->
                         <div class="widget-user-header bg-aqua-active">
                             <h3 class="widget-user-username">Alexander Pierce</h3>
                             <h5 class="widget-user-desc">Founder &amp; CEO</h5>
                         </div>
                         <div class="widget-user-image">
-                            <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+                            <img class="img-circle" src="${request.contextPath}/manage/images/user1-128x128.jpg" alt="User Avatar">
                         </div>
                         <div class="box-footer">
                             <div class="row">
@@ -869,43 +862,32 @@
                                         <h5 class="description-header">3,200</h5>
                                         <span class="description-text">SALES</span>
                                     </div>
-                                    <!-- /.description-block -->
                                 </div>
-                                <!-- /.col -->
                                 <div class="col-sm-4 border-right">
                                     <div class="description-block">
                                         <h5 class="description-header">13,000</h5>
                                         <span class="description-text">FOLLOWERS</span>
                                     </div>
-                                    <!-- /.description-block -->
                                 </div>
-                                <!-- /.col -->
                                 <div class="col-sm-4">
                                     <div class="description-block">
                                         <h5 class="description-header">35</h5>
                                         <span class="description-text">PRODUCTS</span>
                                     </div>
-                                    <!-- /.description-block -->
                                 </div>
-                                <!-- /.col -->
                             </div>
-                            <!-- /.row -->
                         </div>
                     </div>
-                    <!-- /.widget-user -->
                 </div>
-                <!-- /.col -->
                 <div class="col-md-4">
-                    <!-- Widget: user widget style 1 -->
                     <div class="box box-widget widget-user">
-                        <!-- Add the bg color to the header using any of the bg-* classes -->
                         <div class="widget-user-header bg-black"
-                             style="background: url('../dist/img/photo1.png') center center;">
+                             style="background: url('${request.contextPath}/manage/images/photo1.png') center center;">
                             <h3 class="widget-user-username">Elizabeth Pierce</h3>
                             <h5 class="widget-user-desc">Web Designer</h5>
                         </div>
                         <div class="widget-user-image">
-                            <img class="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar">
+                            <img class="img-circle" src="${request.contextPath}/manage/images/user3-128x128.jpg" alt="User Avatar">
                         </div>
                         <div class="box-footer">
                             <div class="row">
@@ -914,34 +896,24 @@
                                         <h5 class="description-header">3,200</h5>
                                         <span class="description-text">SALES</span>
                                     </div>
-                                    <!-- /.description-block -->
                                 </div>
-                                <!-- /.col -->
                                 <div class="col-sm-4 border-right">
                                     <div class="description-block">
                                         <h5 class="description-header">13,000</h5>
                                         <span class="description-text">FOLLOWERS</span>
                                     </div>
-                                    <!-- /.description-block -->
                                 </div>
-                                <!-- /.col -->
                                 <div class="col-sm-4">
                                     <div class="description-block">
                                         <h5 class="description-header">35</h5>
                                         <span class="description-text">PRODUCTS</span>
                                     </div>
-                                    <!-- /.description-block -->
                                 </div>
-                                <!-- /.col -->
                             </div>
-                            <!-- /.row -->
                         </div>
                     </div>
-                    <!-- /.widget-user -->
                 </div>
-                <!-- /.col -->
             </div>
-            <!-- /.row -->
 
             <div class="row">
                 <div class="col-md-6">
@@ -949,7 +921,7 @@
                     <div class="box box-widget">
                         <div class="box-header with-border">
                             <div class="user-block">
-                                <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Image">
+                                <img class="img-circle" src="${request.contextPath}/manage/images/user1-128x128.jpg" alt="User Image">
                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
                                 <span class="description">Shared publicly - 7:30 PM Today</span>
                             </div>
@@ -966,9 +938,9 @@
                             </div>
                             <!-- /.box-tools -->
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
-                            <img class="img-responsive pad" src="../dist/img/photo2.png" alt="Photo">
+                            <img class="img-responsive pad" src="${request.contextPath}/manage/images/photo2.png" alt="Photo">
 
                             <p>I took this photo this morning. What do you guys think?</p>
                             <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share
@@ -977,11 +949,11 @@
                             </button>
                             <span class="pull-right text-muted">127 likes - 3 comments</span>
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer box-comments">
                             <div class="box-comment">
                                 <!-- User image -->
-                                <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User Image">
+                                <img class="img-circle img-sm" src="${request.contextPath}/manage/images/user3-128x128.jpg" alt="User Image">
 
                                 <div class="comment-text">
                       <span class="username">
@@ -996,7 +968,7 @@
                             <!-- /.box-comment -->
                             <div class="box-comment">
                                 <!-- User image -->
-                                <img class="img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="User Image">
+                                <img class="img-circle img-sm" src="${request.contextPath}/manage/images/user4-128x128.jpg" alt="User Image">
 
                                 <div class="comment-text">
                       <span class="username">
@@ -1013,7 +985,7 @@
                         <!-- /.box-footer -->
                         <div class="box-footer">
                             <form action="#" method="post">
-                                <img class="img-responsive img-circle img-sm" src="../dist/img/user4-128x128.jpg"
+                                <img class="img-responsive img-circle img-sm" src="${request.contextPath}/manage/images/user4-128x128.jpg"
                                      alt="Alt Text">
                                 <!-- .img-push is used to add margin to elements next to floating images -->
                                 <div class="img-push">
@@ -1024,15 +996,15 @@
                         </div>
                         <!-- /.box-footer -->
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-6">
                     <!-- Box Comment -->
                     <div class="box box-widget">
                         <div class="box-header with-border">
                             <div class="user-block">
-                                <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Image">
+                                <img class="img-circle" src="${request.contextPath}/manage/images/user1-128x128.jpg" alt="User Image">
                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
                                 <span class="description">Shared publicly - 7:30 PM Today</span>
                             </div>
@@ -1049,7 +1021,7 @@
                             </div>
                             <!-- /.box-tools -->
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <!-- post text -->
                             <p>Far far away, behind the word mountains, far from the
@@ -1064,7 +1036,7 @@
 
                             <!-- Attachment -->
                             <div class="attachment-block clearfix">
-                                <img class="attachment-img" src="../dist/img/photo1.png" alt="Attachment Image">
+                                <img class="attachment-img" src="${request.contextPath}/manage/images/photo1.png" alt="Attachment Image">
 
                                 <div class="attachment-pushed">
                                     <h4 class="attachment-heading"><a href="http://www.lipsum.com/">Lorem ipsum text
@@ -1088,11 +1060,11 @@
                             </button>
                             <span class="pull-right text-muted">45 likes - 2 comments</span>
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer box-comments">
                             <div class="box-comment">
                                 <!-- User image -->
-                                <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User Image">
+                                <img class="img-circle img-sm" src="${request.contextPath}/manage/images/user3-128x128.jpg" alt="User Image">
 
                                 <div class="comment-text">
                       <span class="username">
@@ -1107,7 +1079,7 @@
                             <!-- /.box-comment -->
                             <div class="box-comment">
                                 <!-- User image -->
-                                <img class="img-circle img-sm" src="../dist/img/user5-128x128.jpg" alt="User Image">
+                                <img class="img-circle img-sm" src="${request.contextPath}/manage/images/user5-128x128.jpg" alt="User Image">
 
                                 <div class="comment-text">
                       <span class="username">
@@ -1125,7 +1097,7 @@
                         <!-- /.box-footer -->
                         <div class="box-footer">
                             <form action="#" method="post">
-                                <img class="img-responsive img-circle img-sm" src="../dist/img/user4-128x128.jpg"
+                                <img class="img-responsive img-circle img-sm" src="${request.contextPath}/manage/images/user4-128x128.jpg"
                                      alt="Alt Text">
                                 <!-- .img-push is used to add margin to elements next to floating images -->
                                 <div class="img-push">
@@ -1136,33 +1108,32 @@
                         </div>
                         <!-- /.box-footer -->
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
 
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- SlimScroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
 </body>
 </html>

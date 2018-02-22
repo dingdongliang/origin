@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Morris.js Charts</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
-    <link rel="stylesheet" href="/manage/css/morris.css">
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/morris.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -15,14 +15,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Morris Charts
@@ -35,7 +35,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
             <div class="callout callout-warning">
                 <h4>Warning!</h4>
@@ -46,7 +46,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <!-- AREA CHART -->
+
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <h3 class="box-title">Area Chart</h3>
@@ -62,11 +62,11 @@
                         <div class="box-body chart-responsive">
                             <div class="chart" id="revenue-chart" style="height: 300px;"></div>
                         </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
 
-                    <!-- DONUT CHART -->
+                    </div>
+
+
+
                     <div class="box box-danger">
                         <div class="box-header with-border">
                             <h3 class="box-title">Donut Chart</h3>
@@ -82,14 +82,14 @@
                         <div class="box-body chart-responsive">
                             <div class="chart" id="sales-chart" style="height: 300px; position: relative;"></div>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                 </div>
-                <!-- /.col (LEFT) -->
+
                 <div class="col-md-6">
-                    <!-- LINE CHART -->
+
                     <div class="box box-info">
                         <div class="box-header with-border">
                             <h3 class="box-title">Line Chart</h3>
@@ -105,11 +105,11 @@
                         <div class="box-body chart-responsive">
                             <div class="chart" id="line-chart" style="height: 300px;"></div>
                         </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
 
-                    <!-- BAR CHART -->
+                    </div>
+
+
+
                     <div class="box box-success">
                         <div class="box-header with-border">
                             <h3 class="box-title">Bar Chart</h3>
@@ -125,37 +125,36 @@
                         <div class="box-body chart-responsive">
                             <div class="chart" id="bar-chart" style="height: 300px;"></div>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                 </div>
-                <!-- /.col (RIGHT) -->
+
             </div>
-            <!-- /.row -->
+
 
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
-<script src="/manage/js/raphael.min.js"></script>
-<script src="/manage/js/morris.min.js"></script>
+<script src="${request.contextPath}/manage/js/raphael.min.js"></script>
+<script src="${request.contextPath}/manage/js/morris.min.js"></script>
 <!-- page script -->
 <script>
     $(function () {

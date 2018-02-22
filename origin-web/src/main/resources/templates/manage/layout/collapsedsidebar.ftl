@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Collapsed Sidebar Layout</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <#include "${request.contextPath}/manage/common/css.ftl"/>
 </head>
@@ -26,9 +26,9 @@
 
     <!-- =============================================== -->
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Sidebar Collapsed
@@ -41,7 +41,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
             <div class="callout callout-info">
                 <h4>Tip!</h4>
@@ -69,33 +69,32 @@
                 <div class="box-body">
                     Start creating your amazing application!
                 </div>
-                <!-- /.box-body -->
+
                 <div class="box-footer">
                     Footer
                 </div>
-                <!-- /.box-footer-->
+
             </div>
-            <!-- /.box -->
+
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
 
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 <#include "${request.contextPath}/manage/common/script.ftl"/>
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
 </body>
 </html>

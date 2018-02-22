@@ -4,26 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Calendar</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- fullCalendar -->
-    <link rel="stylesheet" href="/manage/css/fullcalendar.min.css"/>
-    <link rel="stylesheet" href="/manage/css/fullcalendar.print.min.css" media="print"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/fullcalendar.print.min.css" media="print"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Calendar
@@ -35,7 +35,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
             <div class="row">
                 <div class="col-md-3">
@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
                     <!-- /. box -->
                     <div class="box box-solid">
@@ -85,7 +85,7 @@
                                     <li><a class="text-navy" href="#"><i class="fa fa-square"></i></a></li>
                                 </ul>
                             </div>
-                            <!-- /btn-group -->
+
                             <div class="input-group">
                                 <input id="new-event" type="text" class="form-control" placeholder="Event Title">
 
@@ -93,53 +93,52 @@
                                     <button id="add-new-event" type="button" class="btn btn-primary btn-flat">Add
                                     </button>
                                 </div>
-                                <!-- /btn-group -->
+
                             </div>
-                            <!-- /input-group -->
+
                         </div>
                     </div>
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-9">
                     <div class="box box-primary">
                         <div class="box-body no-padding">
                             <!-- THE CALENDAR -->
                             <div id="calendar"></div>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
                     <!-- /. box -->
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
 
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- jQuery UI 1.11.4 -->
-<script src="/manage/js/jquery-ui.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery-ui.min.js"></script>
 <!-- SlimScroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
-<script src="/manage/js/moment.js"></script>
-<script src="/manage/js/fullcalendar.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/moment.js"></script>
+<script src="${request.contextPath}/manage/js/fullcalendar.min.js"></script>
 <!-- Page specific script -->
 <script>
     $(function () {

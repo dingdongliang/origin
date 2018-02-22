@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Read Mail</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- iCheck -->
-    <link rel="stylesheet" href="/manage/iCheck/flat/blue.css">
+    <link rel="stylesheet" href="${request.contextPath}/manage/iCheck/flat/blue.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -16,14 +16,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Read Mail
@@ -34,11 +34,11 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="compose.html" class="btn btn-primary btn-block margin-bottom">Compose</a>
+                    <a href="/mailbox/compose" class="btn btn-primary btn-block margin-bottom">Compose</a>
 
                     <div class="box box-solid">
                         <div class="box-header with-border">
@@ -52,7 +52,7 @@
                         </div>
                         <div class="box-body no-padding">
                             <ul class="nav nav-pills nav-stacked">
-                                <li><a href="mailbox.html"><i class="fa fa-inbox"></i> Inbox
+                                <li><a href="/mailbox/compose"><i class="fa fa-inbox"></i> Inbox
                                     <span class="label label-primary pull-right">12</span></a></li>
                                 <li><a href="#"><i class="fa fa-envelope-o"></i> Sent</a></li>
                                 <li><a href="#"><i class="fa fa-file-text-o"></i> Drafts</a></li>
@@ -62,7 +62,7 @@
                                 <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
                             </ul>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
                     <!-- /. box -->
                     <div class="box box-solid">
@@ -82,11 +82,11 @@
                                 <li><a href="#"><i class="fa fa-circle-o text-light-blue"></i> Social</a></li>
                             </ul>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-9">
                     <div class="box box-primary">
                         <div class="box-header with-border">
@@ -99,7 +99,7 @@
                                         class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body no-padding">
                             <div class="mailbox-read-info">
                                 <h3>Message Subject Is Placed Here</h3>
@@ -186,7 +186,7 @@
                             </div>
                             <!-- /.mailbox-read-message -->
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer">
                             <ul class="mailbox-attachments clearfix">
                                 <li>
@@ -214,7 +214,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="mailbox-attachment-icon has-img"><img src="/manage/images/photo1.png"
+                                    <span class="mailbox-attachment-icon has-img"><img src="${request.contextPath}/manage/images/photo1.png"
                                                                                        alt="Attachment"></span>
 
                                     <div class="mailbox-attachment-info">
@@ -227,7 +227,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="mailbox-attachment-icon has-img"><img src="/manage/images/photo2.png"
+                                    <span class="mailbox-attachment-icon has-img"><img src="${request.contextPath}/manage/images/photo2.png"
                                                                                        alt="Attachment"></span>
 
                                     <div class="mailbox-attachment-info">
@@ -255,27 +255,26 @@
                     </div>
                     <!-- /. box -->
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- SlimScroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
 </body>
 </html>

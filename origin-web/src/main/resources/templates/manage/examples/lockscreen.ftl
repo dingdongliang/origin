@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Lockscreen</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <#include "${request.contextPath}/manage/common/css.ftl"/>
 </head>
@@ -21,7 +21,7 @@
     <div class="lockscreen-item">
         <!-- lockscreen image -->
         <div class="lockscreen-image">
-            <img src="/manage/images/user1-128x128.jpg" alt="User Image">
+            <img src="${request.contextPath}/manage/images/user1-128x128.jpg" alt="User Image">
         </div>
         <!-- /.lockscreen-image -->
 
@@ -43,18 +43,18 @@
         Enter your password to retrieve your session
     </div>
     <div class="text-center">
-        <a href="login.html">Or sign in as a different user</a>
+        <a href="/login">Or sign in as a different user</a>
     </div>
     <div class="lockscreen-footer text-center">
-        Copyright &copy; 2014-2016 <b><a href="https://adminlte.io" class="text-black">Almsaeed Studio</a></b><br>
-        All rights reserved
+        AdminLTE资源：Edit by <b><a href="#">DyEnigma</a>.</b><br>
+        转发请注明.
     </div>
 </div>
 <!-- /.center -->
 
 <!-- jQuery 3 -->
-<script src="/manage/js/jquery.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="/manage/js/bootstrap.min.js"></script>
+<script src="${request.contextPath}/manage/js/bootstrap.min.js"></script>
 </body>
 </html>

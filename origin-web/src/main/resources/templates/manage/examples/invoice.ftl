@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Invoice</title>
-  <!-- Tell the browser to be responsive to screen width -->
+
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <#include "${request.contextPath}/manage/common/css.ftl"/>
 </head>
@@ -14,14 +14,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-  <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-  <!-- Content Wrapper. Contains page content -->
+
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+
     <section class="content-header">
       <h1>
         Invoice
@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <!-- Main content -->
+
     <section class="invoice">
       <!-- title row -->
       <div class="row">
@@ -51,7 +51,7 @@
             <small class="pull-right">Date: 2/10/2014</small>
           </h2>
         </div>
-        <!-- /.col -->
+
       </div>
       <!-- info row -->
       <div class="row invoice-info">
@@ -65,7 +65,7 @@
             Email: info@almasaeedstudio.com
           </address>
         </div>
-        <!-- /.col -->
+
         <div class="col-sm-4 invoice-col">
           To
           <address>
@@ -76,7 +76,7 @@
             Email: john.doe@example.com
           </address>
         </div>
-        <!-- /.col -->
+
         <div class="col-sm-4 invoice-col">
           <b>Invoice #007612</b><br>
           <br>
@@ -84,9 +84,9 @@
           <b>Payment Due:</b> 2/22/2014<br>
           <b>Account:</b> 968-34567
         </div>
-        <!-- /.col -->
+
       </div>
-      <!-- /.row -->
+
 
       <!-- Table row -->
       <div class="row">
@@ -133,25 +133,25 @@
             </tbody>
           </table>
         </div>
-        <!-- /.col -->
+
       </div>
-      <!-- /.row -->
+
 
       <div class="row">
         <!-- accepted payments column -->
         <div class="col-xs-6">
           <p class="lead">Payment Methods:</p>
-          <img src="/manage/images/visa.png" alt="Visa">
-          <img src="/manage/images/mastercard.png" alt="Mastercard">
-          <img src="/manage/images/american-express.png" alt="American Express">
-          <img src="/manage/images/paypal2.png" alt="Paypal">
+          <img src="${request.contextPath}/manage/images/visa.png" alt="Visa">
+          <img src="${request.contextPath}/manage/images/mastercard.png" alt="Mastercard">
+          <img src="${request.contextPath}/manage/images/american-express.png" alt="American Express">
+          <img src="${request.contextPath}/manage/images/paypal2.png" alt="Paypal">
 
           <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
             Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg
             dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
           </p>
         </div>
-        <!-- /.col -->
+
         <div class="col-xs-6">
           <p class="lead">Amount Due 2/22/2014</p>
 
@@ -176,9 +176,9 @@
             </table>
           </div>
         </div>
-        <!-- /.col -->
+
       </div>
-      <!-- /.row -->
+
 
       <!-- this row will not appear when printing -->
       <div class="row no-print">
@@ -192,24 +192,23 @@
         </div>
       </div>
     </section>
-    <!-- /.content -->
+
     <div class="clearfix"></div>
   </div>
-  <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-  <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+
+
   <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 </body>

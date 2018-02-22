@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Simple Tables</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
      <#include "${request.contextPath}/manage/common/css.ftl"/></head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -13,14 +13,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Simple Tables
@@ -33,7 +33,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
             <div class="row">
                 <div class="col-md-6">
@@ -41,7 +41,7 @@
                         <div class="box-header with-border">
                             <h3 class="box-title">Bordered Table</h3>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <table class="table table-bordered">
                                 <tr>
@@ -92,7 +92,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer clearfix">
                             <ul class="pagination pagination-sm no-margin pull-right">
                                 <li><a href="#">&laquo;</a></li>
@@ -103,13 +103,13 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- /.box -->
+
 
                     <div class="box">
                         <div class="box-header">
                             <h3 class="box-title">Condensed Full Width Table</h3>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body no-padding">
                             <table class="table table-condensed">
                                 <tr>
@@ -160,11 +160,11 @@
                                 </tr>
                             </table>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
                 <div class="col-md-6">
                     <div class="box">
                         <div class="box-header">
@@ -180,7 +180,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body no-padding">
                             <table class="table">
                                 <tr>
@@ -231,15 +231,15 @@
                                 </tr>
                             </table>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                     <div class="box">
                         <div class="box-header">
                             <h3 class="box-title">Striped Full Width Table</h3>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body no-padding">
                             <table class="table table-striped">
                                 <tr>
@@ -290,13 +290,13 @@
                                 </tr>
                             </table>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
             <div class="row">
                 <div class="col-xs-12">
                     <div class="box">
@@ -315,7 +315,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body table-responsive no-padding">
                             <table class="table table-hover">
                                 <tr>
@@ -355,32 +355,31 @@
                                 </tr>
                             </table>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
             </div>
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- SlimScroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
 </body>
 </html>

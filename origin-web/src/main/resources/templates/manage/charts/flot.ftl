@@ -4,24 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Flot Charts</title>
-    <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-      <#include "${request.contextPath}/manage/common/css.ftl"/>
+<#include "${request.contextPath}/manage/common/css.ftl"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
     <header class="main-header">
-        <#include "${request.contextPath}/manage/common/head.ftl"/>
+    <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
     <aside class="main-sidebar">
-        <#include "${request.contextPath}/manage/common/menu.ftl"/>
+    <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
-
-    <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
                 Flot Charts
@@ -33,8 +27,6 @@
                 <li class="active">Flot</li>
             </ol>
         </section>
-
-        <!-- Main content -->
         <section class="content">
             <div class="row">
                 <div class="col-xs-12">
@@ -42,9 +34,7 @@
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-bar-chart-o"></i>
-
                             <h3 class="box-title">Interactive Area Chart</h3>
-
                             <div class="box-tools pull-right">
                                 Real time
                                 <div class="btn-group" id="realtime" data-toggle="btn-toggle">
@@ -59,22 +49,14 @@
                         </div>
                         <!-- /.box-body-->
                     </div>
-                    <!-- /.box -->
-
                 </div>
-                <!-- /.col -->
             </div>
-            <!-- /.row -->
-
             <div class="row">
                 <div class="col-md-6">
-                    <!-- Line chart -->
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-bar-chart-o"></i>
-
                             <h3 class="box-title">Line Chart</h3>
-
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
                                         class="fa fa-minus"></i>
@@ -88,15 +70,10 @@
                         </div>
                         <!-- /.box-body-->
                     </div>
-                    <!-- /.box -->
-
-                    <!-- Area chart -->
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-bar-chart-o"></i>
-
                             <h3 class="box-title">Full Width Area Chart</h3>
-
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
                                         class="fa fa-minus"></i>
@@ -110,19 +87,12 @@
                         </div>
                         <!-- /.box-body-->
                     </div>
-                    <!-- /.box -->
-
                 </div>
-                <!-- /.col -->
-
                 <div class="col-md-6">
-                    <!-- Bar chart -->
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-bar-chart-o"></i>
-
                             <h3 class="box-title">Bar Chart</h3>
-
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
                                         class="fa fa-minus"></i>
@@ -136,15 +106,10 @@
                         </div>
                         <!-- /.box-body-->
                     </div>
-                    <!-- /.box -->
-
-                    <!-- Donut chart -->
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-bar-chart-o"></i>
-
                             <h3 class="box-title">Donut Chart</h3>
-
                             <div class="box-tools pull-right">
                                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
                                         class="fa fa-minus"></i>
@@ -158,36 +123,25 @@
                         </div>
                         <!-- /.box-body-->
                     </div>
-                    <!-- /.box -->
                 </div>
-                <!-- /.col -->
             </div>
-            <!-- /.row -->
         </section>
-        <!-- /.content -->
-
     </div>
-    <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <#include "${request.contextPath}/manage/common/foot.ftl"/>
+    <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
-
-    <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
-        <#include "${request.contextPath}/manage/common/setting.ftl"/>
+    <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
-<script src="/manage/js/jquery.flot.js"></script>
-<script src="/manage/js/jquery.flot.resize.js"></script>
-<script src="/manage/js/jquery.flot.pie.js"></script>
-<script src="/manage/js/jquery.flot.categories.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.flot.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.flot.resize.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.flot.pie.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.flot.categories.js"></script>
 <!-- Page script -->
 <script>
     $(function () {

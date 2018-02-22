@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Registration Page</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
-    <link rel="stylesheet" href="/manage/iCheck/square/blue.css">
+    <link rel="stylesheet" href="${request.contextPath}/manage/iCheck/square/blue.css">
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
@@ -43,11 +43,11 @@
                         </label>
                     </div>
                 </div>
-                <!-- /.col -->
+
                 <div class="col-xs-4">
                     <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
                 </div>
-                <!-- /.col -->
+
             </div>
         </form>
 
@@ -68,11 +68,11 @@
 <!-- /.register-box -->
 
 <!-- jQuery 3 -->
-<script src="/manage/js/jquery.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="/manage/js/bootstrap.min.js"></script>
+<script src="${request.contextPath}/manage/js/bootstrap.min.js"></script>
 <!-- iCheck 1.0.1 -->
-<script src="/manage/iCheck/icheck.min.js"></script>
+<script src="${request.contextPath}/manage/iCheck/icheck.min.js"></script>
 <script>
     $(function () {
         $('input').iCheck({

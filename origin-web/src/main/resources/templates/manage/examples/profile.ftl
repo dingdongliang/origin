@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | User Profile</title>
-  <!-- Tell the browser to be responsive to screen width -->
+
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
       <#include "${request.contextPath}/manage/common/css.ftl"/>
 </head>
@@ -14,14 +14,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-  <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-  <!-- Content Wrapper. Contains page content -->
+
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
+
     <section class="content-header">
       <h1>
         User Profile
@@ -33,7 +33,7 @@
       </ol>
     </section>
 
-    <!-- Main content -->
+
     <section class="content">
 
       <div class="row">
@@ -42,7 +42,7 @@
           <!-- Profile Image -->
           <div class="box box-primary">
             <div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="/manage/images/user4-128x128.jpg" alt="User profile picture">
+              <img class="profile-user-img img-responsive img-circle" src="${request.contextPath}/manage/images/user4-128x128.jpg" alt="User profile picture">
 
               <h3 class="profile-username text-center">Nina Mcintire</h3>
 
@@ -62,16 +62,16 @@
 
               <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
             </div>
-            <!-- /.box-body -->
+
           </div>
-          <!-- /.box -->
+
 
           <!-- About Me Box -->
           <div class="box box-primary">
             <div class="box-header with-border">
               <h3 class="box-title">About Me</h3>
             </div>
-            <!-- /.box-header -->
+
             <div class="box-body">
               <strong><i class="fa fa-book margin-r-5"></i> Education</strong>
 
@@ -103,11 +103,11 @@
 
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
             </div>
-            <!-- /.box-body -->
+
           </div>
-          <!-- /.box -->
+
         </div>
-        <!-- /.col -->
+
         <div class="col-md-9">
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
@@ -120,7 +120,7 @@
                 <!-- Post -->
                 <div class="post">
                   <div class="user-block">
-                    <img class="img-circle img-bordered-sm" src="/manage/images/user1-128x128.jpg" alt="user image">
+                    <img class="img-circle img-bordered-sm" src="${request.contextPath}/manage/images/user1-128x128.jpg" alt="user image">
                         <span class="username">
                           <a href="#">Jonathan Burke Jr.</a>
                           <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
@@ -151,7 +151,7 @@
                 <!-- Post -->
                 <div class="post clearfix">
                   <div class="user-block">
-                    <img class="img-circle img-bordered-sm" src="/manage/images/user7-128x128.jpg" alt="User Image">
+                    <img class="img-circle img-bordered-sm" src="${request.contextPath}/manage/images/user7-128x128.jpg" alt="User Image">
                         <span class="username">
                           <a href="#">Sarah Ross</a>
                           <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
@@ -183,7 +183,7 @@
                 <!-- Post -->
                 <div class="post">
                   <div class="user-block">
-                    <img class="img-circle img-bordered-sm" src="/manage/images/user6-128x128.jpg" alt="User Image">
+                    <img class="img-circle img-bordered-sm" src="${request.contextPath}/manage/images/user6-128x128.jpg" alt="User Image">
                         <span class="username">
                           <a href="#">Adam Jones</a>
                           <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
@@ -193,29 +193,29 @@
                   <!-- /.user-block -->
                   <div class="row margin-bottom">
                     <div class="col-sm-6">
-                      <img class="img-responsive" src="/manage/images/photo1.png" alt="Photo">
+                      <img class="img-responsive" src="${request.contextPath}/manage/images/photo1.png" alt="Photo">
                     </div>
-                    <!-- /.col -->
+
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-6">
-                          <img class="img-responsive" src="/manage/images/photo2.png" alt="Photo">
+                          <img class="img-responsive" src="${request.contextPath}/manage/images/photo2.png" alt="Photo">
                           <br>
-                          <img class="img-responsive" src="/manage/images/photo3.jpg" alt="Photo">
+                          <img class="img-responsive" src="${request.contextPath}/manage/images/photo3.jpg" alt="Photo">
                         </div>
-                        <!-- /.col -->
+
                         <div class="col-sm-6">
-                          <img class="img-responsive" src="/manage/images/photo4.jpg" alt="Photo">
+                          <img class="img-responsive" src="${request.contextPath}/manage/images/photo4.jpg" alt="Photo">
                           <br>
-                          <img class="img-responsive" src="/manage/images/photo1.png" alt="Photo">
+                          <img class="img-responsive" src="${request.contextPath}/manage/images/photo1.png" alt="Photo">
                         </div>
-                        <!-- /.col -->
+
                       </div>
-                      <!-- /.row -->
+
                     </div>
-                    <!-- /.col -->
+
                   </div>
-                  <!-- /.row -->
+
 
                   <ul class="list-inline">
                     <li><a href="#" class="link-black text-sm"><i class="fa fa-share margin-r-5"></i> Share</a></li>
@@ -230,7 +230,7 @@
                 </div>
                 <!-- /.post -->
               </div>
-              <!-- /.tab-pane -->
+
               <div class="tab-pane" id="timeline">
                 <!-- The timeline -->
                 <ul class="timeline timeline-inverse">
@@ -325,7 +325,7 @@
                   </li>
                 </ul>
               </div>
-              <!-- /.tab-pane -->
+
 
               <div class="tab-pane" id="settings">
                 <form class="form-horizontal">
@@ -380,34 +380,33 @@
                   </div>
                 </form>
               </div>
-              <!-- /.tab-pane -->
+
             </div>
-            <!-- /.tab-content -->
+
           </div>
           <!-- /.nav-tabs-custom -->
         </div>
-        <!-- /.col -->
+
       </div>
-      <!-- /.row -->
+
 
     </section>
-    <!-- /.content -->
+
   </div>
-  <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-  <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+
+
   <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 </body>

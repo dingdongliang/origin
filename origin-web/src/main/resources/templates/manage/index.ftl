@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | 商业仪表盘</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- jvectormap -->
-    <link rel="stylesheet" href="/manage/css/jquery-jvectormap.css"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/jquery-jvectormap.css"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -467,7 +467,7 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                                        <td><a href="/examples/invoice">OR9842</a></td>
                                         <td>Call of Duty IV</td>
                                         <td><span class="label label-success">Shipped</span></td>
                                         <td>
@@ -477,7 +477,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                                        <td><a href="/examples/invoice">OR1848</a></td>
                                         <td>Samsung Smart TV</td>
                                         <td><span class="label label-warning">Pending</span></td>
                                         <td>
@@ -487,7 +487,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                                        <td><a href="/examples/invoice">OR7429</a></td>
                                         <td>iPhone 6 Plus</td>
                                         <td><span class="label label-danger">Delivered</span></td>
                                         <td>
@@ -497,7 +497,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                                        <td><a href="/examples/invoice">OR7429</a></td>
                                         <td>Samsung Smart TV</td>
                                         <td><span class="label label-info">Processing</span></td>
                                         <td>
@@ -507,7 +507,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><a href="pages/examples/invoice.html">OR1848</a></td>
+                                        <td><a href="/examples/invoice">OR1848</a></td>
                                         <td>Samsung Smart TV</td>
                                         <td><span class="label label-warning">Pending</span></td>
                                         <td>
@@ -517,7 +517,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><a href="pages/examples/invoice.html">OR7429</a></td>
+                                        <td><a href="/examples/invoice">OR7429</a></td>
                                         <td>iPhone 6 Plus</td>
                                         <td><span class="label label-danger">Delivered</span></td>
                                         <td>
@@ -527,7 +527,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><a href="pages/examples/invoice.html">OR9842</a></td>
+                                        <td><a href="/examples/invoice">OR9842</a></td>
                                         <td>Call of Duty IV</td>
                                         <td><span class="label label-success">Shipped</span></td>
                                         <td>
@@ -723,14 +723,14 @@
 </div>
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- Sparkline -->
-<script src="/manage/js/jquery.sparkline.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
-<script src="/manage/js/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="/manage/js/jquery-jvectormap-world-mill-en.js"></script>
+<script src="${request.contextPath}/manage/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery-jvectormap-world-mill-en.js"></script>
 <!-- SlimScroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
 <!-- ChartJS -->
-<script src="/manage/js/Chart.js"></script>
-<script src="/manage/js/dashboard.js"></script>
+<script src="${request.contextPath}/manage/js/Chart.js"></script>
+<script src="${request.contextPath}/manage/js/dashboard.js"></script>
 </body>
 </html>

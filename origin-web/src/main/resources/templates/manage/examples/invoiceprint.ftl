@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AdminLTE 2 | Invoice</title>
-  <!-- Tell the browser to be responsive to screen width -->
+
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <#include "${request.contextPath}/manage/common/css.ftl"/></head>
 <body onload="window.print();">
 <div class="wrapper">
-  <!-- Main content -->
+
   <section class="invoice">
     <!-- title row -->
     <div class="row">
@@ -20,7 +20,7 @@
           <small class="pull-right">Date: 2/10/2014</small>
         </h2>
       </div>
-      <!-- /.col -->
+
     </div>
     <!-- info row -->
     <div class="row invoice-info">
@@ -34,7 +34,7 @@
           Email: info@almasaeedstudio.com
         </address>
       </div>
-      <!-- /.col -->
+
       <div class="col-sm-4 invoice-col">
         To
         <address>
@@ -45,7 +45,7 @@
           Email: john.doe@example.com
         </address>
       </div>
-      <!-- /.col -->
+
       <div class="col-sm-4 invoice-col">
         <b>Invoice #007612</b><br>
         <br>
@@ -53,9 +53,9 @@
         <b>Payment Due:</b> 2/22/2014<br>
         <b>Account:</b> 968-34567
       </div>
-      <!-- /.col -->
+
     </div>
-    <!-- /.row -->
+
 
     <!-- Table row -->
     <div class="row">
@@ -102,9 +102,9 @@
           </tbody>
         </table>
       </div>
-      <!-- /.col -->
+
     </div>
-    <!-- /.row -->
+
 
     <div class="row">
       <!-- accepted payments column -->
@@ -120,7 +120,7 @@
           jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
         </p>
       </div>
-      <!-- /.col -->
+
       <div class="col-xs-6">
         <p class="lead">Amount Due 2/22/2014</p>
 
@@ -145,12 +145,12 @@
           </table>
         </div>
       </div>
-      <!-- /.col -->
+
     </div>
-    <!-- /.row -->
+
   </section>
-  <!-- /.content -->
+
 </div>
-<!-- ./wrapper -->
+
 </body>
 </html>

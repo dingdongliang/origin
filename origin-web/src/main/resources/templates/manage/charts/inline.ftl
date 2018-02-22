@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Inline Charts</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
 </head>
@@ -14,14 +14,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Inline Charts
@@ -34,7 +34,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
 
             <!-- row -->
@@ -56,7 +56,7 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <div class="row">
                                 <div class="col-xs-6 col-md-3 text-center">
@@ -65,30 +65,30 @@
 
                                     <div class="knob-label">New Visitors</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 col-md-3 text-center">
                                     <input type="text" class="knob" value="70" data-width="90" data-height="90"
                                            data-fgColor="#f56954">
 
                                     <div class="knob-label">Bounce Rate</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 col-md-3 text-center">
                                     <input type="text" class="knob" value="-80" data-min="-150" data-max="150"
                                            data-width="90" data-height="90" data-fgColor="#00a65a">
 
                                     <div class="knob-label">Server Load</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 col-md-3 text-center">
                                     <input type="text" class="knob" value="40" data-width="90" data-height="90"
                                            data-fgColor="#00c0ef">
 
                                     <div class="knob-label">Disk Space</div>
                                 </div>
-                                <!-- ./col -->
+
                             </div>
-                            <!-- /.row -->
+
 
                             <div class="row">
                                 <div class="col-xs-6 text-center">
@@ -97,24 +97,24 @@
 
                                     <div class="knob-label">Bandwidth</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 text-center">
                                     <input type="text" class="knob" value="50" data-width="90" data-height="90"
                                            data-fgColor="#39CCCC">
 
                                     <div class="knob-label">CPU</div>
                                 </div>
-                                <!-- ./col -->
+
                             </div>
-                            <!-- /.row -->
+
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
             <div class="row">
                 <div class="col-xs-12">
@@ -133,7 +133,7 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <div class="row">
                                 <div class="col-xs-6 col-md-3 text-center">
@@ -142,21 +142,21 @@
 
                                     <div class="knob-label">data-width="90"</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 col-md-3 text-center">
                                     <input type="text" class="knob" value="30" data-width="120" data-height="120"
                                            data-fgColor="#f56954">
 
                                     <div class="knob-label">data-width="120"</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 col-md-3 text-center">
                                     <input type="text" class="knob" value="30" data-thickness="0.1" data-width="90"
                                            data-height="90" data-fgColor="#00a65a">
 
                                     <div class="knob-label">data-thickness="0.1"</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 col-md-3 text-center">
                                     <input type="text" class="knob" data-thickness="0.2" data-angleArc="250"
                                            data-angleOffset="-125" value="30" data-width="120" data-height="120"
@@ -164,17 +164,17 @@
 
                                     <div class="knob-label">data-angleArc="250"</div>
                                 </div>
-                                <!-- ./col -->
+
                             </div>
-                            <!-- /.row -->
+
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
             <div class="row">
                 <div class="col-xs-12">
@@ -193,7 +193,7 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <div class="row">
                                 <div class="col-xs-6 col-md-3 text-center">
@@ -202,21 +202,21 @@
 
                                     <div class="knob-label">data-width="90"</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 col-md-3 text-center">
                                     <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2"
                                            data-width="120" data-height="120" data-fgColor="#f56954">
 
                                     <div class="knob-label">data-width="120"</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 col-md-3 text-center">
                                     <input type="text" class="knob" value="10" data-skin="tron" data-thickness="0.1"
                                            data-width="90" data-height="90" data-fgColor="#00a65a">
 
                                     <div class="knob-label">data-thickness="0.1"</div>
                                 </div>
-                                <!-- ./col -->
+
                                 <div class="col-xs-6 col-md-3 text-center">
                                     <input type="text" class="knob" value="100" data-skin="tron" data-thickness="0.2"
                                            data-angleArc="250" data-angleOffset="-125" data-width="120"
@@ -224,17 +224,17 @@
 
                                     <div class="knob-label">data-angleArc="250"</div>
                                 </div>
-                                <!-- ./col -->
+
                             </div>
-                            <!-- /.row -->
+
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
             <!-- callout -->
             <div class="callout callout-info">
@@ -256,18 +256,18 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body text-center">
                             <div class="sparkline" data-type="pie" data-offset="90" data-width="100px"
                                  data-height="100px">
                                 6,4,8
                             </div>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
 
                 <div class="col-md-4">
                     <div class="box box-solid">
@@ -279,7 +279,7 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body text-center">
                             <div class="sparkline" data-type="line" data-spot-Radius="3"
                                  data-highlight-Spot-Color="#f39c12" data-highlight-Line-Color="#222"
@@ -289,11 +289,11 @@
                                 6,4,7,8,4,3,2,2,5,6,7,4,1,5,7,9,9,8,7,6
                             </div>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
 
                 <div class="col-md-4">
                     <div class="box box-solid">
@@ -305,20 +305,20 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body text-center">
                             <div class="sparkline" data-type="bar" data-width="97%" data-height="100px"
                                  data-bar-Width="14" data-bar-Spacing="7" data-bar-Color="#f39c12">
                                 6,4,8, 9, 10, 5, 13, 18, 21, 7, 9
                             </div>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
             <div class="row">
                 <div class="col-xs-12">
@@ -335,7 +335,7 @@
                                 </button>
                             </div>
                         </div>
-                        <!-- /.box-header -->
+
                         <div id="myBody" class="box-body">
                             <div class="row">
                                 <div class="col-sm-6">
@@ -385,7 +385,7 @@
                                         <span class="sparkbullet">10,12,14,9,7</span><br>
                                     </p>
                                 </div>
-                                <!-- /.col -->
+
                                 <div class="col-sm-6">
                                     <p>
                                         Customize size and colours
@@ -415,43 +415,42 @@
                                         <span class="sparkpie">20,50,80</span>
                                     </p>
                                 </div>
-                                <!-- /.col -->
+
                             </div>
-                            <!-- /.row -->
+
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
 
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- Slimscroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
-<script src="/manage/js/jquery.knob.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.knob.min.js"></script>
 <!-- Sparkline -->
-<script src="/manage/js/jquery.sparkline.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.sparkline.min.js"></script>
 <!-- page script -->
 <script>
     $(function () {

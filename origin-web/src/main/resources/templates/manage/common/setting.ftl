@@ -24,7 +24,7 @@
                             <i class="menu-icon fa fa-user bg-yellow"></i>
 
                             <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">Dyenigma更新个人资料</h4>
+                                <h4 class="control-sidebar-subheading">DyEnigma更新个人资料</h4>
 
                                 <p>新增电话： +1(800)555-1234</p>
                             </div>
@@ -35,7 +35,7 @@
                             <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
 
                             <div class="menu-info">
-                                <h4 class="control-sidebar-subheading">dyenigma加入邮件列表</h4>
+                                <h4 class="control-sidebar-subheading">DyEnigma加入邮件列表</h4>
 
                                 <p>dyenigma@163.com</p>
                             </div>
@@ -109,10 +109,10 @@
                 <!-- /.control-sidebar-menu -->
 
             </div>
-            <!-- /.tab-pane -->
+
             <!-- Stats tab content -->
             <div class="tab-pane" id="control-sidebar-stats-tab">统计标签内容</div>
-            <!-- /.tab-pane -->
+
             <!-- Settings tab content -->
             <div class="tab-pane" id="control-sidebar-settings-tab">
                 <form method="post">
@@ -181,5 +181,5 @@
                     <!-- /.form-group -->
                 </form>
             </div>
-            <!-- /.tab-pane -->
+
         </div>

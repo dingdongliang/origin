@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Data Tables</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- DataTables -->
-    <link rel="stylesheet" href="/manage/css/dataTables.bootstrap.min.css"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/dataTables.bootstrap.min.css"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -16,14 +16,14 @@
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Data Tables
@@ -36,7 +36,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
             <div class="row">
                 <div class="col-xs-12">
@@ -44,7 +44,7 @@
                         <div class="box-header">
                             <h3 class="box-title">Hover Data Table</h3>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
@@ -476,15 +476,15 @@
                                 </tfoot>
                             </table>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                     <div class="box">
                         <div class="box-header">
                             <h3 class="box-title">Data Table With Full Features</h3>
                         </div>
-                        <!-- /.box-header -->
+
                         <div class="box-body">
                             <table id="example1" class="table table-bordered table-striped">
                                 <thead>
@@ -916,38 +916,37 @@
                                 </tfoot>
                             </table>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col -->
+
             </div>
-            <!-- /.row -->
+
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- DataTables -->
-<script src="/manage/js/jquery.dataTables.min.js"></script>
-<script src="/manage/js/dataTables.bootstrap.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.dataTables.min.js"></script>
+<script src="${request.contextPath}/manage/js/dataTables.bootstrap.min.js"></script>
 <!-- SlimScroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
 <!-- page script -->
 <script>
     $(function () {

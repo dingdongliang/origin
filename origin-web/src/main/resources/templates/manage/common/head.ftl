@@ -230,14 +230,14 @@
             <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <img src="${request.contextPath}/manage/images/user2-160x160.jpg" class="user-image" alt="User Image">
-                    <span class="hidden-xs">Dyenigma</span>
+                    <span class="hidden-xs">DyEnigma</span>
                 </a>
                 <ul class="dropdown-menu">
                     <!-- User image -->
                     <li class="user-header">
                         <img src="${request.contextPath}/manage/images/user2-160x160.jpg" class="img-circle" alt="User Image">
                         <p>
-                            Dyenigma - Web 开发人员
+                            DyEnigma - Web 开发人员
                             <small>2012年11月 成为 会员</small>
                         </p>
                     </li>
@@ -254,7 +254,7 @@
                                 <a href="#">好友</a>
                             </div>
                         </div>
-                        <!-- /.row -->
+
                     </li>
                     <!-- Menu Footer-->
                     <li class="user-footer">

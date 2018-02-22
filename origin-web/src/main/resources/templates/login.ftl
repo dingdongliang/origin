@@ -4,21 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | 登录</title>
-    <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <#include "${request.contextPath}/manage/common/css.ftl"/>
+<#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- iCheck -->
-    <link rel="stylesheet" href="/manage/iCheck/square/blue.css">
+    <link rel="stylesheet" href="${request.contextPath}/manage/iCheck/square/blue.css">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="../../index2.html"><b>Dy</b>Enigma</a>
+        <a href="/index"><b>Dy</b>Enigma</a>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">登录系统</p>
-
         <form action="/index" method="post">
             <div class="form-group has-feedback">
                 <input type="email" class="form-control" name="username" id="username" placeholder="邮箱或用户名">
@@ -36,35 +34,27 @@
                         </label>
                     </div>
                 </div>
-                <!-- /.col -->
                 <div class="col-xs-4">
                     <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
                 </div>
-                <!-- /.col -->
             </div>
         </form>
-
         <div class="social-auth-links text-center">
             <p>- 其他登录方式 -</p>
             <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i>
                 使用微信账号登录</a>
             <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> 使用QQ账号登录</a>
         </div>
-        <!-- /.social-auth-links -->
-
         <a href="#">忘记密码</a><br>
         <a href="/register" class="text-center">注册一个新的账号</a>
-
     </div>
-    <!-- /.login-box-body -->
 </div>
-<!-- /.login-box -->
 <!-- jQuery 3 -->
-<script src="/manage/js/jquery.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="/manage/js/bootstrap.min.js"></script>
+<script src="${request.contextPath}/manage/js/bootstrap.min.js"></script>
 <!-- iCheck 1.0.1 -->
-<script src="/manage/iCheck/icheck.min.js"></script>
+<script src="${request.contextPath}/manage/iCheck/icheck.min.js"></script>
 <script>
     $(function () {
         $('input').iCheck({

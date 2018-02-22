@@ -4,35 +4,35 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>AdminLTE 2 | Advanced form elements</title>
-    <!-- Tell the browser to be responsive to screen width -->
+
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- daterange picker -->
-    <link rel="stylesheet" href="/manage/css/daterangepicker.css"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/daterangepicker.css"/>
     <!-- bootstrap datepicker -->
-    <link rel="stylesheet" href="/manage/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/bootstrap-datepicker.min.css"/>
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="/manage/iCheck/all.css"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/iCheck/all.css"/>
     <!-- Bootstrap Color Picker -->
-    <link rel="stylesheet" href="/manage/css/bootstrap-colorpicker.min.css"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/bootstrap-colorpicker.min.css"/>
     <!-- Bootstrap time Picker -->
-    <link rel="stylesheet" href="/manage/css/bootstrap-timepicker.min.css"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/bootstrap-timepicker.min.css"/>
     <!-- Select2 -->
-    <link rel="stylesheet" href="/manage/css/select2.min.css"/>
+    <link rel="stylesheet" href="${request.contextPath}/manage/css/select2.min.css"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
     <header class="main-header">
         <#include "${request.contextPath}/manage/common/head.ftl"/>
     </header>
-    <!-- Left side column. contains the logo and sidebar -->
+
     <aside class="main-sidebar">
         <#include "${request.contextPath}/manage/common/menu.ftl"/>
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
+
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
         <section class="content-header">
             <h1>
                 Advanced Form Elements
@@ -45,7 +45,7 @@
             </ol>
         </section>
 
-        <!-- Main content -->
+
         <section class="content">
 
             <!-- SELECT2 EXAMPLE -->
@@ -60,7 +60,7 @@
                         </button>
                     </div>
                 </div>
-                <!-- /.box-header -->
+
                 <div class="box-body">
                     <div class="row">
                         <div class="col-md-6">
@@ -91,7 +91,7 @@
                             </div>
                             <!-- /.form-group -->
                         </div>
-                        <!-- /.col -->
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Multiple</label>
@@ -122,18 +122,18 @@
                             </div>
                             <!-- /.form-group -->
                         </div>
-                        <!-- /.col -->
+
                     </div>
-                    <!-- /.row -->
+
                 </div>
-                <!-- /.box-body -->
+
                 <div class="box-footer">
                     Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and
                     information about
                     the plugin.
                 </div>
             </div>
-            <!-- /.box -->
+
 
             <div class="row">
                 <div class="col-md-6">
@@ -217,9 +217,9 @@
                             <!-- /.form group -->
 
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                     <div class="box box-info">
                         <div class="box-header">
@@ -265,12 +265,12 @@
                                 <!-- /.form group -->
                             </div>
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                 </div>
-                <!-- /.col (left) -->
+
                 <div class="col-md-6">
                     <div class="box box-primary">
                         <div class="box-header">
@@ -335,9 +335,9 @@
                             <!-- /.form group -->
 
                         </div>
-                        <!-- /.box-body -->
+
                     </div>
-                    <!-- /.box -->
+
 
                     <!-- iCheck -->
                     <div class="box box-success">
@@ -435,56 +435,55 @@
                                 </label>
                             </div>
                         </div>
-                        <!-- /.box-body -->
+
                         <div class="box-footer">
                             Many more skins available. <a href="http://fronteed.com/iCheck/">Documentation</a>
                         </div>
                     </div>
-                    <!-- /.box -->
+
                 </div>
-                <!-- /.col (right) -->
+
             </div>
-            <!-- /.row -->
+
 
         </section>
-        <!-- /.content -->
+
     </div>
-    <!-- /.content-wrapper -->
+
     <footer class="main-footer">
         <#include "${request.contextPath}/manage/common/foot.ftl"/>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <aside class="control-sidebar control-sidebar-dark">
         <#include "${request.contextPath}/manage/common/setting.ftl"/>
     </aside>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-         immediately after the control sidebar -->
+
+
     <div class="control-sidebar-bg"></div>
 </div>
-<!-- ./wrapper -->
+
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- Select2 -->
-<script src="/manage/js/select2.full.min.js"></script>
+<script src="${request.contextPath}/manage/js/select2.full.min.js"></script>
 <!-- InputMask -->
-<script src="/manage/js/jquery.inputmask.js"></script>
-<script src="/manage/js/jquery.inputmask.date.extensions.js"></script>
-<script src="/manage/js/jquery.inputmask.extensions.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.inputmask.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.inputmask.date.extensions.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.inputmask.extensions.js"></script>
 <!-- date-range-picker -->
-<script src="/manage/js/momentad.js"></script>
-<script src="/manage/js/daterangepicker.js"></script>
+<script src="${request.contextPath}/manage/js/momentad.js"></script>
+<script src="${request.contextPath}/manage/js/daterangepicker.js"></script>
 <!-- bootstrap datepicker -->
-<script src="/manage/js/bootstrap-datepicker.min.js"></script>
+<script src="${request.contextPath}/manage/js/bootstrap-datepicker.min.js"></script>
 <!-- bootstrap color picker -->
-<script src="/manage/js/bootstrap-colorpicker.min.js"></script>
+<script src="${request.contextPath}/manage/js/bootstrap-colorpicker.min.js"></script>
 <!-- bootstrap time picker -->
-<script src="/manage/js/bootstrap-timepicker.min.js"></script>
+<script src="${request.contextPath}/manage/js/bootstrap-timepicker.min.js"></script>
 <!-- SlimScroll -->
-<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
 <!-- iCheck 1.0.1 -->
-<script src="/manage/iCheck/icheck.min.js"></script>
+<script src="${request.contextPath}/manage/iCheck/icheck.min.js"></script>
 <!-- Page script -->
 <script>
     $(function () {
