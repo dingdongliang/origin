@@ -12,17 +12,17 @@
 	- 创建多个模块，有几个模块写几行
 		- Linux
 
-			    mkdir -p origin-interface/src/main/{java,resources} origin-interface/src/test/{java,resource}
-				mkdir -p origin-service/src/main/{java,resources} origin-service/src/test/{java,resource}
-				mkdir -p origin-web/src/main/{java,resources} origin-web/src/test/{java,resource}
-				mkdir -p origin-configure/src/main/{java,resources} origin-configure/src/test/{java,resource}
+			    mkdir -p origin-interface/src/main/{java,resources} origin-interface/src/test/{java,resources}
+				mkdir -p origin-service/src/main/{java,resources} origin-service/src/test/{java,resources}
+				mkdir -p origin-web/src/main/{java,resources} origin-web/src/test/{java,resources}
+				mkdir -p origin-configure/src/main/{java,resources} origin-configure/src/test/{java,resources}
 
         - Windows
 
-              mkdir origin-interface\src\main\java,origin-interface\src\main\resource,origin-interface\src\test\java,origin-interface\src\test\resource
-              mkdir origin-service\src\main\java,origin-service\src\main\resource,origin-service\src\test\java,origin-service\src\test\resource
-              mkdir origin-web\src\main\java,origin-web\src\main\resource,origin-web\src\test\java,origin-web\src\test\resource
-              mkdir origin-configure\src\main\java,origin-configure\src\main\resource,origin-configure\src\test\java,origin-configure\src\test\resource
+              mkdir origin-interface\src\main\java,origin-interface\src\main\resources,origin-interface\src\test\java,origin-interface\src\test\resources
+              mkdir origin-service\src\main\java,origin-service\src\main\resources,origin-service\src\test\java,origin-service\src\test\resources
+              mkdir origin-web\src\main\java,origin-web\src\main\resources,origin-web\src\test\java,origin-web\src\test\resources
+              mkdir origin-configure\src\main\java,origin-configure\src\main\resources,origin-configure\src\test\java,origin-configure\src\test\resources
 
 	- 修改settings.gradle文件
 		-  引入子模块：include 'shiro-interface','shiro-service','shiro-web','shiro-configure'
