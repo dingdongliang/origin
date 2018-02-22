@@ -108,7 +108,7 @@ public class LoginController {
             sysUserService.update(sysUser);
 
             request.getSession().setAttribute("currUser", account);
-            resultPageURL += "manage/main";
+            resultPageURL += "index";
             logger.debug(resultPageURL);
         } catch (UnknownAccountException uae) {
             logger.debug("对用户[" + account + "]进行登录验证..验证未通过,未知账户");

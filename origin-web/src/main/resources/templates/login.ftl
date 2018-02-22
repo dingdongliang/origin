@@ -17,15 +17,27 @@
     <!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">登录系统</p>
-        <form action="/index" method="post">
+        <form action="/enter" method="POST">
             <div class="form-group has-feedback">
-                <input type="email" class="form-control" name="username" id="username" placeholder="邮箱或用户名">
+                <input type="text" class="form-control" name="account" id="username" value="system"
+                       placeholder="邮箱或用户名">
                 <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
             </div>
             <div class="form-group has-feedback">
-                <input type="password" class="form-control" name="password" id="password" placeholder="密码">
+                <input type="password" class="form-control" name="password" id="password" value="system"
+                       placeholder="密码">
                 <span class="glyphicon glyphicon-lock form-control-feedback"></span>
             </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <input name="verifyCode" class="form-control"
+                           type="text" placeholder="验证码" onclick="JavaScript:this.value=''"/>
+                </div>
+                <div class="col-xs-6">
+                    <img src="/captcha" id="kaptchaImage" style="display:block;width:100%;height:34px;"/>
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
             <div class="row">
                 <div class="col-xs-8">
                     <div class="checkbox icheck">
@@ -61,6 +73,10 @@
             checkboxClass: 'icheckbox_square-blue',
             radioClass: 'iradio_square-blue',
             increaseArea: '20%'
+        });
+
+        $('#kaptchaImage').click(function () {
+            $(this).hide().attr('src', '/captcha?' + Math.floor(Math.random() * 100)).fadeIn();
         });
     });
 </script>
