@@ -447,10 +447,10 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- Slimscroll -->
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
-<script src="${request.contextPath}/manage/js/jquery.knob.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/jquery.knob.min.js"></script>
 <!-- Sparkline -->
-<script src="${request.contextPath}/manage/js/jquery.sparkline.min.js"></script>
+<script src="/manage/js/jquery.sparkline.min.js"></script>
 <!-- page script -->
 <script>
     $(function () {

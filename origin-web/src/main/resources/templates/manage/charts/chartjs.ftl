@@ -120,7 +120,7 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- ChartJS -->
-<script src="${request.contextPath}/manage/js/Chart.js"></script>
+<script src="/manage/js/Chart.js"></script>
 <!-- page script -->
 <script>
     $(function () {

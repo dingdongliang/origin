@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- DataTables -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/dataTables.bootstrap.min.css"/>
+    <link rel="stylesheet" href="/manage/bootstrap/css/dataTables.bootstrap.min.css"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -943,10 +943,10 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- DataTables -->
-<script src="${request.contextPath}/manage/js/jquery.dataTables.min.js"></script>
-<script src="${request.contextPath}/manage/js/dataTables.bootstrap.min.js"></script>
+<script src="/manage/js/jquery.dataTables.min.js"></script>
+<script src="/manage/js/dataTables.bootstrap.min.js"></script>
 <!-- SlimScroll -->
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
 <!-- page script -->
 <script>
     $(function () {

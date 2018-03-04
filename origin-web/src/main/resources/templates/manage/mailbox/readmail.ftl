@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- iCheck -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/iCheck/flat/blue.css">
+    <link rel="stylesheet" href="/manage/iCheck/flat/blue.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -214,7 +214,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="mailbox-attachment-icon has-img"><img src="${request.contextPath}/manage/images/photo1.png"
+                                    <span class="mailbox-attachment-icon has-img"><img src="/manage/images/photo1.png"
                                                                                        alt="Attachment"></span>
 
                                     <div class="mailbox-attachment-info">
@@ -227,7 +227,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <span class="mailbox-attachment-icon has-img"><img src="${request.contextPath}/manage/images/photo2.png"
+                                    <span class="mailbox-attachment-icon has-img"><img src="/manage/images/photo2.png"
                                                                                        alt="Attachment"></span>
 
                                     <div class="mailbox-attachment-info">
@@ -275,6 +275,6 @@
 </div>
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- SlimScroll -->
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
 </body>
 </html>

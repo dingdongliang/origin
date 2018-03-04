@@ -8,17 +8,17 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- daterange picker -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/daterangepicker.css"/>
+    <link rel="stylesheet" href="/manage/css/daterangepicker.css"/>
     <!-- bootstrap datepicker -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="/manage/bootstrap/css/bootstrap-datepicker.min.css"/>
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/iCheck/all.css"/>
+    <link rel="stylesheet" href="/manage/iCheck/all.css"/>
     <!-- Bootstrap Color Picker -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/bootstrap-colorpicker.min.css"/>
+    <link rel="stylesheet" href="/manage/bootstrap/css/bootstrap-colorpicker.min.css"/>
     <!-- Bootstrap time Picker -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/bootstrap-timepicker.min.css"/>
+    <link rel="stylesheet" href="/manage/bootstrap/css/bootstrap-timepicker.min.css"/>
     <!-- Select2 -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/select2.min.css"/>
+    <link rel="stylesheet" href="/manage/css/select2.min.css"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -466,24 +466,24 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- Select2 -->
-<script src="${request.contextPath}/manage/js/select2.full.min.js"></script>
+<script src="/manage/js/select2.full.min.js"></script>
 <!-- InputMask -->
-<script src="${request.contextPath}/manage/js/jquery.inputmask.js"></script>
-<script src="${request.contextPath}/manage/js/jquery.inputmask.date.extensions.js"></script>
-<script src="${request.contextPath}/manage/js/jquery.inputmask.extensions.js"></script>
+<script src="/manage/js/jquery.inputmask.js"></script>
+<script src="/manage/js/jquery.inputmask.date.extensions.js"></script>
+<script src="/manage/js/jquery.inputmask.extensions.js"></script>
 <!-- date-range-picker -->
-<script src="${request.contextPath}/manage/js/momentad.js"></script>
-<script src="${request.contextPath}/manage/js/daterangepicker.js"></script>
+<script src="/manage/js/momentad.js"></script>
+<script src="/manage/js/daterangepicker.js"></script>
 <!-- bootstrap datepicker -->
-<script src="${request.contextPath}/manage/js/bootstrap-datepicker.min.js"></script>
+<script src="/manage/js/bootstrap-datepicker.min.js"></script>
 <!-- bootstrap color picker -->
-<script src="${request.contextPath}/manage/js/bootstrap-colorpicker.min.js"></script>
+<script src="/manage/js/bootstrap-colorpicker.min.js"></script>
 <!-- bootstrap time picker -->
-<script src="${request.contextPath}/manage/js/bootstrap-timepicker.min.js"></script>
+<script src="/manage/js/bootstrap-timepicker.min.js"></script>
 <!-- SlimScroll -->
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
 <!-- iCheck 1.0.1 -->
-<script src="${request.contextPath}/manage/iCheck/icheck.min.js"></script>
+<script src="/manage/iCheck/icheck.min.js"></script>
 <!-- Page script -->
 <script>
     $(function () {

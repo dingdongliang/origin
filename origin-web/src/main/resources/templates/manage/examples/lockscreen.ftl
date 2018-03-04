@@ -21,7 +21,7 @@
     <div class="lockscreen-item">
         <!-- lockscreen image -->
         <div class="lockscreen-image">
-            <img src="${request.contextPath}/manage/images/user1-128x128.jpg" alt="User Image">
+            <img src="/manage/images/user1-128x128.jpg" alt="User Image">
         </div>
         <!-- /.lockscreen-image -->
 
@@ -53,8 +53,8 @@
 <!-- /.center -->
 
 <!-- jQuery 3 -->
-<script src="${request.contextPath}/manage/js/jquery.min.js"></script>
+<script src="/manage/js/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="${request.contextPath}/manage/js/bootstrap.min.js"></script>
+<script src="/manage/js/bootstrap.min.js"></script>
 </body>
 </html>

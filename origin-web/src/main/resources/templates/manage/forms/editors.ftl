@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/bootstrap3-wysihtml5.min.css"/>
+    <link rel="stylesheet" href="/manage/bootstrap/css/bootstrap3-wysihtml5.min.css"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -119,9 +119,9 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- CK Editor -->
-<script src="${request.contextPath}/manage/ckeditor/ckeditor.js"></script>
+<script src="/manage/ckeditor/ckeditor.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
-<script src="${request.contextPath}/manage/js/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="/manage/js/bootstrap3-wysihtml5.all.min.js"></script>
 <script>
     $(function () {
         // Replace the <textarea id="editor1"> with a CKEditor

@@ -95,6 +95,6 @@
 </div>
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
 </body>
 </html>

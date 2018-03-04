@@ -63,7 +63,7 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- Slimscroll -->
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
 <script>
     $(document).ready(function () {
         $('.sidebar-menu').tree()

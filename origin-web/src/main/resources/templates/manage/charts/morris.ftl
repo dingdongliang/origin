@@ -7,7 +7,7 @@
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/morris.css">
+    <link rel="stylesheet" href="/manage/css/morris.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -153,8 +153,8 @@
 
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
-<script src="${request.contextPath}/manage/js/raphael.min.js"></script>
-<script src="${request.contextPath}/manage/js/morris.min.js"></script>
+<script src="/manage/js/raphael.min.js"></script>
+<script src="/manage/js/morris.min.js"></script>
 <!-- page script -->
 <script>
     $(function () {

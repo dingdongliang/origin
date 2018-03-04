@@ -458,7 +458,7 @@
                                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
+                                    <img class="direct-chat-img" src="/manage/images/user1-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         Is this template really for free? That's unbelievable!
@@ -474,7 +474,7 @@
                                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user3-128x128.jpg"
+                                    <img class="direct-chat-img" src="/manage/images/user3-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         You better believe it!
@@ -490,7 +490,7 @@
                                 <ul class="contacts-list">
                                     <li>
                                         <a href="#">
-                                            <img class="contacts-list-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
+                                            <img class="contacts-list-img" src="/manage/images/user1-128x128.jpg"
                                                  alt="User Image">
 
                                             <div class="contacts-list-info">
@@ -556,7 +556,7 @@
                                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
+                                    <img class="direct-chat-img" src="/manage/images/user1-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         Is this template really for free? That's unbelievable!
@@ -572,7 +572,7 @@
                                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user3-128x128.jpg"
+                                    <img class="direct-chat-img" src="/manage/images/user3-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         You better believe it!
@@ -588,7 +588,7 @@
                                 <ul class="contacts-list">
                                     <li>
                                         <a href="#">
-                                            <img class="contacts-list-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
+                                            <img class="contacts-list-img" src="/manage/images/user1-128x128.jpg"
                                                  alt="User Image">
 
                                             <div class="contacts-list-info">
@@ -654,7 +654,7 @@
                                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
+                                    <img class="direct-chat-img" src="/manage/images/user1-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         Is this template really for free? That's unbelievable!
@@ -670,7 +670,7 @@
                                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user3-128x128.jpg"
+                                    <img class="direct-chat-img" src="/manage/images/user3-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         You better believe it!
@@ -686,7 +686,7 @@
                                 <ul class="contacts-list">
                                     <li>
                                         <a href="#">
-                                            <img class="contacts-list-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
+                                            <img class="contacts-list-img" src="/manage/images/user1-128x128.jpg"
                                                  alt="User Image">
 
                                             <div class="contacts-list-info">
@@ -752,7 +752,7 @@
                                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
+                                    <img class="direct-chat-img" src="/manage/images/user1-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         Is this template really for free? That's unbelievable!
@@ -768,7 +768,7 @@
                                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                                     </div>
                                     <!-- /.direct-chat-info -->
-                                    <img class="direct-chat-img" src="${request.contextPath}/manage/images/user3-128x128.jpg"
+                                    <img class="direct-chat-img" src="/manage/images/user3-128x128.jpg"
                                          alt="Message User Image"><!-- /.direct-chat-img -->
                                     <div class="direct-chat-text">
                                         You better believe it!
@@ -784,7 +784,7 @@
                                 <ul class="contacts-list">
                                     <li>
                                         <a href="#">
-                                            <img class="contacts-list-img" src="${request.contextPath}/manage/images/user1-128x128.jpg"
+                                            <img class="contacts-list-img" src="/manage/images/user1-128x128.jpg"
                                                  alt="User Image">
 
                                             <div class="contacts-list-info">
@@ -830,7 +830,7 @@
                     <div class="box box-widget widget-user-2">
                         <div class="widget-user-header bg-yellow">
                             <div class="widget-user-image">
-                                <img class="img-circle" src="${request.contextPath}/manage/images/user7-128x128.jpg" alt="User Avatar">
+                                <img class="img-circle" src="/manage/images/user7-128x128.jpg" alt="User Avatar">
                             </div>
                             <h3 class="widget-user-username">Nadia Carmichael</h3>
                             <h5 class="widget-user-desc">Lead Developer</h5>
@@ -853,7 +853,7 @@
                             <h5 class="widget-user-desc">Founder &amp; CEO</h5>
                         </div>
                         <div class="widget-user-image">
-                            <img class="img-circle" src="${request.contextPath}/manage/images/user1-128x128.jpg" alt="User Avatar">
+                            <img class="img-circle" src="/manage/images/user1-128x128.jpg" alt="User Avatar">
                         </div>
                         <div class="box-footer">
                             <div class="row">
@@ -887,7 +887,7 @@
                             <h5 class="widget-user-desc">Web Designer</h5>
                         </div>
                         <div class="widget-user-image">
-                            <img class="img-circle" src="${request.contextPath}/manage/images/user3-128x128.jpg" alt="User Avatar">
+                            <img class="img-circle" src="/manage/images/user3-128x128.jpg" alt="User Avatar">
                         </div>
                         <div class="box-footer">
                             <div class="row">
@@ -921,7 +921,7 @@
                     <div class="box box-widget">
                         <div class="box-header with-border">
                             <div class="user-block">
-                                <img class="img-circle" src="${request.contextPath}/manage/images/user1-128x128.jpg" alt="User Image">
+                                <img class="img-circle" src="/manage/images/user1-128x128.jpg" alt="User Image">
                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
                                 <span class="description">Shared publicly - 7:30 PM Today</span>
                             </div>
@@ -940,7 +940,7 @@
                         </div>
 
                         <div class="box-body">
-                            <img class="img-responsive pad" src="${request.contextPath}/manage/images/photo2.png" alt="Photo">
+                            <img class="img-responsive pad" src="/manage/images/photo2.png" alt="Photo">
 
                             <p>I took this photo this morning. What do you guys think?</p>
                             <button type="button" class="btn btn-default btn-xs"><i class="fa fa-share"></i> Share
@@ -953,7 +953,7 @@
                         <div class="box-footer box-comments">
                             <div class="box-comment">
                                 <!-- User image -->
-                                <img class="img-circle img-sm" src="${request.contextPath}/manage/images/user3-128x128.jpg" alt="User Image">
+                                <img class="img-circle img-sm" src="/manage/images/user3-128x128.jpg" alt="User Image">
 
                                 <div class="comment-text">
                       <span class="username">
@@ -968,7 +968,7 @@
                             <!-- /.box-comment -->
                             <div class="box-comment">
                                 <!-- User image -->
-                                <img class="img-circle img-sm" src="${request.contextPath}/manage/images/user4-128x128.jpg" alt="User Image">
+                                <img class="img-circle img-sm" src="/manage/images/user4-128x128.jpg" alt="User Image">
 
                                 <div class="comment-text">
                       <span class="username">
@@ -985,7 +985,7 @@
                         <!-- /.box-footer -->
                         <div class="box-footer">
                             <form action="#" method="post">
-                                <img class="img-responsive img-circle img-sm" src="${request.contextPath}/manage/images/user4-128x128.jpg"
+                                <img class="img-responsive img-circle img-sm" src="/manage/images/user4-128x128.jpg"
                                      alt="Alt Text">
                                 <!-- .img-push is used to add margin to elements next to floating images -->
                                 <div class="img-push">
@@ -1004,7 +1004,7 @@
                     <div class="box box-widget">
                         <div class="box-header with-border">
                             <div class="user-block">
-                                <img class="img-circle" src="${request.contextPath}/manage/images/user1-128x128.jpg" alt="User Image">
+                                <img class="img-circle" src="/manage/images/user1-128x128.jpg" alt="User Image">
                                 <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
                                 <span class="description">Shared publicly - 7:30 PM Today</span>
                             </div>
@@ -1036,7 +1036,7 @@
 
                             <!-- Attachment -->
                             <div class="attachment-block clearfix">
-                                <img class="attachment-img" src="${request.contextPath}/manage/images/photo1.png" alt="Attachment Image">
+                                <img class="attachment-img" src="/manage/images/photo1.png" alt="Attachment Image">
 
                                 <div class="attachment-pushed">
                                     <h4 class="attachment-heading"><a href="http://www.lipsum.com/">Lorem ipsum text
@@ -1064,7 +1064,7 @@
                         <div class="box-footer box-comments">
                             <div class="box-comment">
                                 <!-- User image -->
-                                <img class="img-circle img-sm" src="${request.contextPath}/manage/images/user3-128x128.jpg" alt="User Image">
+                                <img class="img-circle img-sm" src="/manage/images/user3-128x128.jpg" alt="User Image">
 
                                 <div class="comment-text">
                       <span class="username">
@@ -1079,7 +1079,7 @@
                             <!-- /.box-comment -->
                             <div class="box-comment">
                                 <!-- User image -->
-                                <img class="img-circle img-sm" src="${request.contextPath}/manage/images/user5-128x128.jpg" alt="User Image">
+                                <img class="img-circle img-sm" src="/manage/images/user5-128x128.jpg" alt="User Image">
 
                                 <div class="comment-text">
                       <span class="username">
@@ -1097,7 +1097,7 @@
                         <!-- /.box-footer -->
                         <div class="box-footer">
                             <form action="#" method="post">
-                                <img class="img-responsive img-circle img-sm" src="${request.contextPath}/manage/images/user4-128x128.jpg"
+                                <img class="img-responsive img-circle img-sm" src="/manage/images/user4-128x128.jpg"
                                      alt="Alt Text">
                                 <!-- .img-push is used to add margin to elements next to floating images -->
                                 <div class="img-push">
@@ -1134,6 +1134,6 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- SlimScroll -->
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
 </body>
 </html>

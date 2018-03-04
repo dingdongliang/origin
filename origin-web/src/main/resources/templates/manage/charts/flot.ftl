@@ -138,10 +138,10 @@
 
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
-<script src="${request.contextPath}/manage/js/jquery.flot.js"></script>
-<script src="${request.contextPath}/manage/js/jquery.flot.resize.js"></script>
-<script src="${request.contextPath}/manage/js/jquery.flot.pie.js"></script>
-<script src="${request.contextPath}/manage/js/jquery.flot.categories.js"></script>
+<script src="/manage/js/jquery.flot.js"></script>
+<script src="/manage/js/jquery.flot.resize.js"></script>
+<script src="/manage/js/jquery.flot.pie.js"></script>
+<script src="/manage/js/jquery.flot.categories.js"></script>
 <!-- Page script -->
 <script>
     $(function () {

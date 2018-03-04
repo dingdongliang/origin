@@ -1,6 +1,6 @@
 /* iCheck plugin skins
 ----------------------------------- */
-@import url("/manage/iCheck/minimal/_all.css");
+@import url("minimal/_all.css");
 /*
 @import url("/manage/iCheck/minimal/minimal.css");
 @import url("/manage/iCheck/minimal/red.css");
@@ -14,7 +14,7 @@
 @import url("/manage/iCheck/minimal/purple.css");
 */
 
-@import url("/manage/iCheck/square/_all.css");
+@import url("square/_all.css");
 /*
 @import url("/manage/iCheck/square/square.css");
 @import url("/manage/iCheck/square/red.css");
@@ -28,7 +28,7 @@
 @import url("/manage/iCheck/square/purple.css");
 */
 
-@import url("/manage/iCheck/flat/_all.css");
+@import url("flat/_all.css");
 /*
 @import url("/manage/iCheck/flat/flat.css");
 @import url("/manage/iCheck/flat/red.css");
@@ -42,7 +42,7 @@
 @import url("/manage/iCheck/flat/purple.css");
 */
 
-@import url("/manage/iCheck/line/_all.css");
+@import url("line/_all.css");
 /*
 @import url("/manage/iCheck/line/line.css");
 @import url("/manage/iCheck/line/red.css");
@@ -56,6 +56,6 @@
 @import url("/manage/iCheck/line/purple.css");
 */
 
-@import url("/manage/iCheck/polaris/polaris.css");
+@import url("polaris/polaris.css");
 
-@import url("/manage/iCheck/futurico/futurico.css");
+@import url("futurico/futurico.css");

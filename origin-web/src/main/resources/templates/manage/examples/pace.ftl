@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- Pace style -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/pace.min.css">
+    <link rel="stylesheet" href="/manage/css/pace.min.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -103,9 +103,9 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- PACE -->
-<script src="${request.contextPath}/manage/js/pace.min.js"></script>
+<script src="/manage/js/pace.min.js"></script>
 <!-- Slimscroll -->
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
 <!-- page script -->
 <script type="text/javascript">
     // To make Pace works on Ajax calls

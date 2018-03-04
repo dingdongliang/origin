@@ -8,9 +8,9 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- iCheck -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/iCheck/flat/blue.css">
+    <link rel="stylesheet" href="/manage/iCheck/flat/blue.css">
     <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/bootstrap3-wysihtml5.min.css"/>
+    <link rel="stylesheet" href="/manage/bootstrap/css/bootstrap3-wysihtml5.min.css"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -175,11 +175,11 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- SlimScroll -->
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
 <!-- iCheck 1.0.1 -->
-<script src="${request.contextPath}/manage/iCheck/icheck.min.js"></script>
+<script src="/manage/iCheck/icheck.min.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
-<script src="${request.contextPath}/manage/js/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="/manage/js/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Page Script -->
 <script>
     $(function () {

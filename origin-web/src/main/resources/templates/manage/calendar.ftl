@@ -8,8 +8,8 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <#include "${request.contextPath}/manage/common/css.ftl"/>
     <!-- fullCalendar -->
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/fullcalendar.min.css"/>
-    <link rel="stylesheet" href="${request.contextPath}/manage/css/fullcalendar.print.min.css" media="print"/>
+    <link rel="stylesheet" href="/manage/css/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="/manage/css/fullcalendar.print.min.css" media="print"/>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -134,11 +134,11 @@
 
 <#include "${request.contextPath}/manage/common/script.ftl"/>
 <!-- jQuery UI 1.11.4 -->
-<script src="${request.contextPath}/manage/js/jquery-ui.min.js"></script>
+<script src="/manage/js/jquery-ui.min.js"></script>
 <!-- SlimScroll -->
-<script src="${request.contextPath}/manage/js/jquery.slimscroll.min.js"></script>
-<script src="${request.contextPath}/manage/js/moment.js"></script>
-<script src="${request.contextPath}/manage/js/fullcalendar.min.js"></script>
+<script src="/manage/js/jquery.slimscroll.min.js"></script>
+<script src="/manage/js/moment.js"></script>
+<script src="/manage/js/fullcalendar.min.js"></script>
 <!-- Page specific script -->
 <script>
     $(function () {

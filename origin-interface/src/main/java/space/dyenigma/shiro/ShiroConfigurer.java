@@ -49,6 +49,7 @@ public class ShiroConfigurer {
 
         // 配置不会被拦截的链接 顺序判断,authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问
         filterChainDefinitionMap.put("/*/ckeditor/**", "anon");
+        filterChainDefinitionMap.put("/*/bootstrap/**", "anon");
         filterChainDefinitionMap.put("/*/css/**", "anon");
         filterChainDefinitionMap.put("/*/fonts/**", "anon");
         filterChainDefinitionMap.put("/*/iCheck/**", "anon");

@@ -28,7 +28,7 @@
                             <li><!-- start message -->
                                 <a href="#">
                                     <div class="pull-left">
-                                        <img src="${request.contextPath}/manage/images/user2-160x160.jpg"
+                                        <img src="/manage/images/user2-160x160.jpg"
                                              class="img-circle"
                                              alt="User Image">
                                     </div>
@@ -43,7 +43,7 @@
                             <li>
                                 <a href="#">
                                     <div class="pull-left">
-                                        <img src="${request.contextPath}/manage/images/user3-128x128.jpg"
+                                        <img src="/manage/images/user3-128x128.jpg"
                                              class="img-circle"
                                              alt="User Image">
                                     </div>
@@ -57,7 +57,7 @@
                             <li>
                                 <a href="#">
                                     <div class="pull-left">
-                                        <img src="${request.contextPath}/manage/images/user4-128x128.jpg"
+                                        <img src="/manage/images/user4-128x128.jpg"
                                              class="img-circle"
                                              alt="User Image">
                                     </div>
@@ -71,7 +71,7 @@
                             <li>
                                 <a href="#">
                                     <div class="pull-left">
-                                        <img src="${request.contextPath}/manage/images/user3-128x128.jpg"
+                                        <img src="/manage/images/user3-128x128.jpg"
                                              class="img-circle"
                                              alt="User Image">
                                     </div>
@@ -85,7 +85,7 @@
                             <li>
                                 <a href="#">
                                     <div class="pull-left">
-                                        <img src="${request.contextPath}/manage/images/user4-128x128.jpg"
+                                        <img src="/manage/images/user4-128x128.jpg"
                                              class="img-circle"
                                              alt="User Image">
                                     </div>
@@ -229,13 +229,13 @@
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img src="${request.contextPath}/manage/images/user2-160x160.jpg" class="user-image" alt="User Image">
+                    <img src="/manage/images/user2-160x160.jpg" class="user-image" alt="User Image">
                     <span class="hidden-xs">DyEnigma</span>
                 </a>
                 <ul class="dropdown-menu">
                     <!-- User image -->
                     <li class="user-header">
-                        <img src="${request.contextPath}/manage/images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="/manage/images/user2-160x160.jpg" class="img-circle" alt="User Image">
                         <p>
                             DyEnigma - Web 开发人员
                             <small>2012年11月 成为 会员</small>
